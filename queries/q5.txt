@@ -1,0 +1,28 @@
+PREFIX fo: <http://www.w3.org/1999/XSL/Format#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX focu: <http://focu.io/schema#>
+PREFIX focudata: <http://focu.io/data#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://example.org/>
+
+#5. What [materials] (slides, readings) are recommended for [topic] in [course] [number]?
+SELECT DISTINCT ?courseNumber ?courseSubject ?courseName ?slide ?topicLabel
+WHERE {
+
+  ?slide a focu:Slides ;
+  focu:coversTopic ?topic .
+
+  ?topic a focu:topic ;
+  rdfs:label ?topicLabel .
+
+  ?course a focu:Course ;
+  focu:courseNumber ?courseNumber;
+  focu:courseSubject ?courseSubject;
+  focu:courseName ?courseName ;
+  focu:coversTopic ?topic .
+
+  FILTER (?courseNumber = "6721" && ?courseSubject = "COMP")
+}

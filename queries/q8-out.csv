@@ -1,0 +1,4 @@
+"courseSubject","courseNumber","lecture","content","lab","worksheet"
+"COMP","6721","http://focu.io/data#COMP6721-LEC-08","http://localhost:3030/play/courses/COMP6721/LEC/LS08.pdf",,
+"COMP","6721","http://focu.io/data#COMP6721-LEC-08","http://focu.io/data#COMP6721-WKS-05",,"http://localhost:3030/play/courses/COMP6721/WKS/WS05.pdf"
+"COMP","6721","http://focu.io/data#COMP6721-LEC-08","http://focu.io/data#COMP6721-LAB-10","http://localhost:3030/play/courses/COMP6721/LAB/LE10.pdf",

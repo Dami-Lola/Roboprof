@@ -1,0 +1,38 @@
+PREFIX fo: <http://www.w3.org/1999/XSL/Format#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX focu: <http://focu.io/schema#>
+PREFIX focudata: <http://focu.io/data#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://example.org/>
+
+#8. Detail the content (slides, worksheets, readings) available for [lecture number] in [course] [number].
+SELECT DISTINCT ?courseSubject ?courseNumber ?lecture ?content ?lab ?worksheet
+WHERE {
+  ?course a focu:Course ;
+  focu:courseNumber ?courseNumber;
+  focu:courseSubject ?courseSubject;
+  focu:courseName ?courseName ;
+  focu:coversTopic ?topic .
+
+  ?lecture a focu:Lecture ;
+  focu:lectureNumber ?lectureNumber ;
+  focu:hasContent ?content .
+
+  OPTIONAL{?content a focu:Slides ;
+  focu:coversTopic ?topic .}
+
+  OPTIONAL
+  {?content a focu:Lab ;
+  focu:hasContent ?lab .}
+
+  OPTIONAL
+  {?content a focu:Worksheet ;
+  focu:hasContent ?worksheet .
+ }
+
+  FILTER(?lectureNumber = "11"^^xsd:int)
+  FILTER(?courseNumber = "6721" && ?courseSubject = "COMP")
+}

@@ -1,0 +1,26 @@
+PREFIX fo: <http://www.w3.org/1999/XSL/Format#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX focu: <http://focu.io/schema#>
+PREFIX focudata: <http://focu.io/data#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://example.org/>
+
+#2. In which courses is [topic] discussed?
+SELECT ?courseSubject ?courseNumber ?courseName ?topicLable
+WHERE {
+
+  ?course a focu:Course;
+  focu:coversTopic ?topic ;
+  focu:courseNumber ?courseNumber;
+  focu:courseSubject ?courseSubject;
+  focu:courseName ?courseName .
+
+
+  ?topic a focu:topic;
+  rdfs:label ?topicLable .
+
+  FILTER (?topicLable = "Knowledge_Graphs")
+}

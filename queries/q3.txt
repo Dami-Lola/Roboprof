@@ -1,0 +1,32 @@
+PREFIX fo: <http://www.w3.org/1999/XSL/Format#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX focu: <http://focu.io/schema#>
+PREFIX focudata: <http://focu.io/data#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://example.org/>
+
+#3. Which [topics] are covered in [course] during [lecture number]?
+SELECT DISTINCT ?courseSubject ?courseNumber ?topicLabel
+WHERE {
+  ?course a focu:Course ;
+  focu:courseNumber ?courseNumber;
+  focu:courseSubject ?courseSubject;
+  focu:courseName ?courseName ;
+  focu:coversTopic ?topic .
+
+  ?lecture a focu:Lecture ;
+  focu:lectureNumber ?lectureNumber ;
+  focu:hasContent ?content .
+
+  ?content a focu:Slides ;
+  focu:coversTopic ?topic .
+
+  ?topic a focu:topic ;
+  rdfs:label ?topicLabel.
+
+  FILTER(?lectureNumber = "2"^^xsd:int)
+  FILTER(?courseNumber = "6721" && ?courseSubject = "COMP")
+}
