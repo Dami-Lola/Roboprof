@@ -17,32 +17,11 @@ if __name__ == '__main__':
     FOCUDATA = Namespace('http://focu.io/data#')
     OWL = Namespace('http://www.w3.org/2002/07/owl#')
 
-    # Initialize a dataset and bind namespaces
+    # Initialize a graph and bind namespaces
     g = Graph()
     g.bind('focu', FOCU)
     g.bind('focudata', FOCUDATA)
     g.bind('owl', OWL)
-
-    # Store course keys to create new triples when accessing the .csv file
-
-    # Create all courses
-    for index, row in readCsv.iterrows():
-        g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), RDF.type, FOCU.Course))
-        g.add((FOCUDATA.Concordia_University, FOCU.offers, URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog'])))))
-        if not pd.isnull(row['Long Title']):
-            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.courseName, Literal(row['Long Title'])))
-        if not pd.isnull(row['Subject']):
-            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.courseSubject, Literal(row['Subject'])))
-            # courseName = row['Subject']
-        if not pd.isnull(row['Catalog']):
-            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.courseNumber, Literal(row['Catalog'])))
-            # courseNumber = row['Catalog']
-        if not pd.isnull(row['Description']):
-            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.description, Literal(row['Description'])))
-        if not pd.isnull(row['Website']):
-            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), RDFS.seeAlso, Literal(row['Website'])))
-        if not pd.isnull(row['Class Units']):
-            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.courseCredits, Literal(str(row['Class Units']))))
 
     # Create Concordia University
     g.add((URIRef(FOCUDATA + "Concordia_University"), RDF.type, FOCU.University))
@@ -54,6 +33,23 @@ if __name__ == '__main__':
            URIRef("https://dbpedia.org/resource/Concordia_University")))
     g.add((URIRef(FOCUDATA + "Concordia_University"), OWL.sameAs,
            URIRef("https://dbpedia.org/resource/Concordia_University")))
+
+    # Create all courses
+    for index, row in readCsv.iterrows():
+        g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), RDF.type, FOCU.Course))
+        g.add((FOCUDATA.Concordia_University, FOCU.offers, URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog'])))))
+        if not pd.isnull(row['Long Title']):
+            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.courseName, Literal(row['Long Title'])))
+        if not pd.isnull(row['Subject']):
+            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.courseSubject, Literal(row['Subject'])))
+        if not pd.isnull(row['Catalog']):
+            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.courseNumber, Literal(row['Catalog'])))
+        if not pd.isnull(row['Description']):
+            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.description, Literal(row['Description'])))
+        if not pd.isnull(row['Website']):
+            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), RDFS.seeAlso, Literal(row['Website'])))
+        if not pd.isnull(row['Class Units']):
+            g.add((URIRef(FOCUDATA + (row['Subject'] + str(row['Catalog']))), FOCU.courseCredits, Literal(str(row['Class Units']))))
 
     with open(url, encoding='ISO-8859-1') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
@@ -217,6 +213,6 @@ if __name__ == '__main__':
 
 
     g.serialize('GraphData.ttl', format='turtle')
+    # g.serialize('GraphDataN3.ttl', format='nt')
 
     print("Graph successfully generated. Enjoy!")
-    # g.serialize('GraphDataN3.ttl', format='nt')
