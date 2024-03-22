@@ -68,4 +68,4 @@ To test the queries, follow the steps below to setup Triplestore and SPARQL Endp
 
 ## Authors (Contributors)
 * **Oluwadamilola Okafor - Evaluation Specialist**
-* **Ankush Ishwarbhai Desai (40271170) - Data Specialist**
+* **Ankush Ishwarbhai Desai - Data Specialist**
