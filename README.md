@@ -29,9 +29,9 @@ This project marks the genesis of a transformative journey, comprised of two int
 
 
 ## Folders
-courses: contains all the course contents(lecture slides, worksheet, lab and course outline) for COMP474/6741 and COMP6721
-openData: contains the 2 (CU_SR_OPEN_DATA_CATALOG and CATALOG.).csv files from https://opendata.concordia.ca/datasets/ and the generated csv file OPENDATACOMBINED
-queries: contains all the queries and their respective outputs.
+* courses: contains all the course contents(lecture slides, worksheet, lab and course outline) for COMP474/6741 and COMP6721
+* openData: contains the 2 (CU_SR_OPEN_DATA_CATALOG and CATALOG.).csv files from https://opendata.concordia.ca/datasets/ and the generated csv file OPENDATACOMBINED
+* queries: contains all the queries and their respective outputs.
 
 ### Prerequisites
 * Python 3.8.8
