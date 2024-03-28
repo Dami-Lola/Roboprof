@@ -25,7 +25,7 @@ ex:AyakaKamisotu a focu:Student ;
     ],
     [
         focu:courseCode focudata:COMP691 ;
-        focu:gradeAchieved "A-"
+        focu:gradeAchieved "F-"
     ],
     [
         focu:courseCode focudata:COMS205 ;
@@ -38,7 +38,11 @@ ex:AyakaKamisotu a focu:Student ;
     [
         focu:courseCode focudata:COMS284 ;
         focu:gradeAchieved "C-"
-    ].
+    ],
+        [
+        focu:courseCode focudata:COMP691 ;
+        focu:gradeAchieved "A+"
+    ],.
 
 ex:RaidenShogun a focu:Student ;
     focu:studentEmail "raidenshogun@live.concordia.ca" ;

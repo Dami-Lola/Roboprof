@@ -143,7 +143,7 @@ if __name__ == '__main__':
                                 lectureCount = lectureCount + 1
 
 
-                    # Add course contents for COMP6721
+                    # Add course contents for COMP6741
                     # -----------------------------------------------------
                     #                   C O M P 6 7 4 1
                     # -----------------------------------------------------
