@@ -1,0 +1,22 @@
+This will contain the sample questions to ask the chatbot concerning each query, for easy of testing and demo
+
+    - For [MBA644](course), what additional resources are available?
+    - Additional links to [MBA644](course)?
+    - For [BTM633](course), what additional resources are available?
+    - Additional links to [BTM633](course)?
+    - For [CHST605](course), what additional resources are available?
+    - Additional links to [CHST605](course)?
+    - For [POLI693](course), what additional resources are available?
+    - Additional links to [POLI693](course)?
+    - For [BLDG390](course), what additional resources are available?
+    - Additional links to [BLDG390](course)?
+
+
+
+
+14)
+What is FBRS 481 about?
+What is FINA 405 about?
+What is GEOG 210 about?
+
+

@@ -1,0 +1,122 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - about_course
+  - about_course_event
+  - about_course_topicevent
+  - request_all_courses
+  - about_course_topics
+  - about_course_lecture_topics
+  - about_specific_uni_courses
+  - about_recommended_materials
+  - about_course_credits
+  - about_additional_resources
+  - about_content_course_lecture
+  - about_course_reading_materials
+  - about_student_competencies
+  - about_student_grades
+  - about_student_completed_course
+  - about_student_transcript
+  - about_person
+
+entities:
+  - course
+  - lecture
+  - topic
+  - university
+  - courseEvent
+  - subject
+  - student
+  - person
+
+actions:
+  - action_course_info
+  - action_course_event
+  - action_course_topicevent
+  - action_query_all_courses
+  - action_course_topics
+  - action_course_lecture_topics
+  - action_specific_uni_courses
+  - action_recommended_materials
+  - action_course_credits
+  - action_additional_resources
+  - action_content_course_lecture
+  - action_course_reading_materials
+  - action_student_competencies
+  - action_student_grades
+  - action_student_completed_course
+  - action_student_transcript
+  - action_person_info
+
+slots:
+  person:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: person
+  university:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: university
+  topic:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: topic
+  lecture:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: lecture
+  course:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: course
+  subject:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: subject
+  student:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: student
+  courseEvent:
+    type: any
+    mappings:
+      - type: from_entity
+        entity: courseEvent
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

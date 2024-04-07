@@ -1,0 +1,35 @@
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX focu: <http://focu.io/schema#>
+PREFIX focudata: <http://focu.io/data#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://example.org/>
+
+#14.
+SELECT DISTINCT ?courseNumber ?courseName ?topicLabel ?topicURL ?lab ?slide ?worksheet
+WHERE {
+
+  ?topic a focu:topic ;
+  rdfs:label ?topicLabel ;
+  rdfs:seeAlso ?topicURL .
+
+  ?course a focu:Course ;
+  focu:courseNumber ?courseNumber ;
+  focu:courseSubject ?courseSubject ;
+  focu:courseName ?courseName ;
+  focu:coversTopic ?topic.
+
+  {
+  ?lab a focu:Lab;
+  focu:coversTopic ?topic.}
+  UNION
+  {?slide a focu:Slides;
+  focu:coversTopic ?topic.}
+  UNION
+  {?worksheet a focu:Worksheet;
+  focu:coversTopic ?topic.}
+
+  FILTER (?courseNumber = "6721" && ?courseSubject = "COMP")
+}

@@ -1,0 +1,131 @@
+version: "3.1"
+
+stories:
+
+- story: get course info
+  steps:
+    - intent: about_course
+    - action: action_course_info
+
+- story: get course event
+  steps:
+    - intent: about_course_event
+    - action: action_course_event
+
+- story: get course topic event
+  steps:
+    - intent: about_course_topicevent
+    - action: action_course_topicevent
+
+#1
+- story: Fetch all courses
+  steps:
+    - intent: request_all_courses
+    - action: action_query_all_courses
+
+#2
+- story: get course topics
+  steps:
+    - intent: about_course_topics
+    - action: action_course_topics
+
+#3
+- story: get course lecture topics
+  steps:
+    - intent: about_course_lecture_topics
+    - action: action_course_lecture_topics
+
+#4
+- story: get specific courses in uni
+  steps:
+    - intent: about_specific_uni_courses
+    - action: action_specific_uni_courses
+
+#5
+- story: get specific courses in uni
+  steps:
+    - intent: about_recommended_materials
+    - action: action_recommended_materials
+
+#6
+- story: get course credit
+  steps:
+    - intent: about_course_credits
+    - action: action_course_credits
+
+#7
+- story: get additional resources
+  steps:
+    - intent: about_additional_resources
+    - action: action_additional_resources
+
+#8
+- story: get course content in lecture
+  steps:
+    - intent: about_content_course_lecture
+    - action: action_content_course_lecture
+
+#9
+- story: get courses reading materials
+  steps:
+    - intent: about_course_reading_materials
+    - action: action_course_reading_materials
+
+#10
+- story: get student competencies
+  steps:
+    - intent: about_student_competencies
+    - action: action_student_competencies
+
+#11
+- story: get student grades
+  steps:
+    - intent: about_student_grades
+    - action: action_student_grades
+
+#12
+- story: get student completed course
+  steps:
+    - intent: about_student_completed_course
+    - action: action_student_completed_course
+
+#13
+- story: get student transcript
+  steps:
+    - intent: about_student_transcript
+    - action: action_student_transcript
+
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: get person info
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: about_person
+    - action: action_person_info

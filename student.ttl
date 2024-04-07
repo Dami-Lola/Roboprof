@@ -11,21 +11,17 @@ ex:AyakaKamisotu a focu:Student ;
     focu:completedCourse [
         focu:courseCode focudata:COMP6721 ;
         focu:gradeAchieved "A" ;
-        focu:competencyInTopic focudata:Alpha_Beta_Pruning,
-                               focudata:Artificial_Intelligence,
-                               focudata:Artificial_Neural_Networks,
-                               focudata:Decision_Trees
+        focu:competencyInTopic focudata:Alphabeta_pruning,
+                               focudata:Automated_reasoning,
+                               focudata:Computer_vision,
+                               focudata:Data_visualization
     ],
     [
         focu:courseCode focudata:COMP6741 ;
         focu:gradeAchieved "B+" ;
-        focu:competencyInTopic focudata:Intelligent_Agents,
-                               focudata:Intelligent_Systems,
-                               focudata:Introduction_to_Machine_Learning
-    ],
-    [
-        focu:courseCode focudata:COMP691 ;
-        focu:gradeAchieved "F-"
+        focu:competencyInTopic focudata:Confusion_matrix,
+                               focudata:Cross-validation_statistics,
+                               focudata:Decision_tree_learning
     ],
     [
         focu:courseCode focudata:COMS205 ;
@@ -42,7 +38,7 @@ ex:AyakaKamisotu a focu:Student ;
         [
         focu:courseCode focudata:COMP691 ;
         focu:gradeAchieved "A+"
-    ],.
+    ].
 
 ex:RaidenShogun a focu:Student ;
     focu:studentEmail "raidenshogun@live.concordia.ca" ;
@@ -51,17 +47,17 @@ ex:RaidenShogun a focu:Student ;
     focu:completedCourse [
         focu:courseCode focudata:COMP6721 ;
         focu:gradeAchieved "B+" ;
-        focu:competencyInTopic focudata:Deep_Learning_CNNs,
-                               focudata:Deep_Learning_NLP,
-                               focudata:Deep_Learning_for_NLP,
-                               focudata:Intelligent_Agents
+        focu:competencyInTopic focudata:Alphabeta_pruning,
+                               focudata:Cluster_analysis,
+                               focudata:Database_normalization,
+                               focudata:Knowledge_Graph
     ],
     [
         focu:courseCode focudata:COMP6741 ;
         focu:gradeAchieved "B+" ;
-        focu:competencyInTopic focudata:Knowledge_Base_Queries,
-                               focudata:Knowledge_Graphs,
-                               focudata:Linked_Open_Data
+        focu:competencyInTopic focudata:ELIZA,
+                               focudata:Euclidean_distance,
+                               focudata:FOAF_ontology
     ],
     [
         focu:courseCode focudata:COMP691 ;
@@ -87,17 +83,17 @@ ex:SaraKujou a focu:Student ;
     focu:completedCourse [
         focu:courseCode focudata:COMP6721 ;
         focu:gradeAchieved "A+" ;
-        focu:competencyInTopic focudata:Naive_Bayes_Classification,
-                               focudata:Neural_Networks,
+        focu:competencyInTopic focudata:Naive_Bayes_classifier,
+                               focudata:Ontology_information_science,
                                focudata:SPARQL,
-                               focudata:k_means_Clustering
+                               focudata:Centroid
     ],
     [
         focu:courseCode focudata:COMP6741 ;
         focu:gradeAchieved "A+" ;
-        focu:competencyInTopic focudata:Recommender_Systems,
-                               focudata:Text_Mining,
-                               focudata:Vocabularies_Ontologies
+        focu:competencyInTopic focudata:Intelligent_agent,
+                               focudata:Natural_language_processing,
+                               focudata:Open_data
     ],
     [
         focu:courseCode focudata:COMP890 ;

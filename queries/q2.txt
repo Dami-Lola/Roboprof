@@ -22,5 +22,5 @@ WHERE {
   ?topic a focu:topic;
   rdfs:label ?topicLable .
 
-  FILTER (?topicLable = "Knowledge_Graphs")
+  FILTER (?topicLable = "Computer_architecture")
 }

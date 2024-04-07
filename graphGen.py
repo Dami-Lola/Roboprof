@@ -109,7 +109,7 @@ if __name__ == '__main__':
                         # -----------------------------------------------------
                         #           ADD TOPIC
                         # -----------------------------------------------------
-                        topics = open("manualTopics.txt").readlines()
+                        topics = open("courseTopics.txt").readlines()
                         for topic in topics:
                             if "COMP6721" in topic:
                                 topic = topic.replace("\n", "")
@@ -170,7 +170,7 @@ if __name__ == '__main__':
                         # -----------------------------------------------------
                         #           ADD TOPIC
                         # -----------------------------------------------------
-                        topics = open("manualTopics.txt").readlines()
+                        topics = open("courseTopics.txt").readlines()
                         for topic in topics:
                             if "COMP6741" in topic:
                                 topic = topic.replace("\n", "")

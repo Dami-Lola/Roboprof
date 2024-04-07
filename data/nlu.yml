@@ -1,0 +1,227 @@
+version: "3.1"
+
+nlu:
+
+- regex: course
+  examples: |
+    - ^[a-zA-Z]{4}\s*\d{3,4}$
+
+- intent: about_person
+  examples: |
+    - Who is he?
+    - Who is [Timothy Donald Cook](person) ?
+    - Who is [Kate](person)?
+    - Who is [Harry](person)
+    - Tell me about him
+    - Tell me about
+    - Tell me about [Peter](person)
+    - Tell me about [Joe](person)
+    - Can you tell me about him?
+    - Can you tell me about [Jane](person)?
+    - Can you tell me about [Peter](person) ?
+    - Can you tell me about [Jonathan](person) ?
+    - Do you know [Alice](person) ?
+    - Tell me about [Jack](person) ?
+
+#1. List all courses offered by [university]
+- intent: request_all_courses
+  examples: |
+    - Can you list all the courses available?
+    - I want to see all the courses offered.
+    - What are the available courses?
+
+
+#2. In which courses is [topic] discussed?
+- intent: about_course_topics
+  examples: |
+    - What course covers [Bayes_classifier](topic)?
+    - What course teaches [K-means_clustering](topic)
+    - Which courses covers [FOAF_ontology](topic)?
+
+
+#3. Which [topics] are covered in [course] during [lecture number]?
+- intent: about_course_lecture_topics
+  examples: |
+    - Which topics are covered in [COMP 6741](course) for [lecture 3](lecture)?
+    - What topics are covered in [COMP 6721](course) in [lecture 5](lecture)?
+    - Which topics are covered in the course [COMP 6721](course) in the [lecture 9](lecture)?
+    
+#4. List all [courses] offered by [university] within the [subject] (e.g., “COMP”, “SOEN”).
+- intent: about_specific_uni_courses
+  examples: |
+    - What are the [COMP](subject) courses the university offers.
+    - Can you list all [SOEN](subject) courses does available?
+
+#5. What [materials] (slides, readings) are recommended for [topic] in [course] [number]?
+- intent: about_recommended_materials
+  examples: |
+    - What are the course material for [K-means_clustering](topic) in [COMP 6721](course)?
+    - Recommended materials that covers [K-means_clustering](topic) in [COMP 6721](course)
+
+#6. How many credits is [course] [number] worth?
+- intent: about_course_credits
+  examples: |
+    - How many credits is [MECH 6051](course) worth?
+    - How many credits for [MECH 6051](course)?
+    - [MECH 6051](course) has how many credits?
+
+
+#7. For [course] [number], what additional resources (links to web pages) are available?
+- intent: about_additional_resources
+  examples: |
+    - For [MANA 684](course), what additional resources are available?
+    - Additional links to [MANA 684](course)?    
+    
+
+#8. Detail the content (slides, worksheets, readings) available for [lecture number] in [course] [number].
+- intent: about_content_course_lecture
+  examples: |
+    - What content does [COMP 6741](course) in [Lecture 3](lecture) consist of?
+    - What's the content of [COMP 6741](course) in [Lecture 6](lecture)?
+    - What is the content of [COMP6721](course) for [Lecture 1](lecture)?
+    
+
+#9. What reading materials are recommended for studying [topic] in [course]?
+- intent: about_course_reading_materials
+  examples: |
+    - What reading materials does [COMP 6721](course) have covering [K-means_clustering](topic)?
+    - What are the reading materials of [K-means_clustering](topic) in [COMP 6741](course) ?
+
+
+#10. What competencies [topics] does a student gain after completing [course] [number]?
+- intent: about_student_competencies
+  examples: |
+    - What is the competence of [AyakaKamisotu](student) from [COMP 6721](course)?
+    - What topics does [AyakaKamisotu](student) have competence in for [COMP 6721](course)?
+    - What is the competence of [RaidenShogun](student) from [COMP 6721](course)?
+    - What topics does [RaidenShogun](student) have competence in for [COMP 6741](course)?
+    - What is the competence of [SaraKujou](student) from [COMP 6741](course)?
+    - What topics does [SaraKujou](student) have competence in for [COMP 6721](course)?
+
+#11. What grades did [student] achieve in [course] [number]?
+- intent: about_student_grades
+  examples: |
+    - What is [student](student) grade in [COMP 6721](course)?
+    - What grade did [student](student) achieve in [COMP 6741](course)?
+ 
+
+#12. Which [students] have completed [course] [number]?
+- intent: about_student_completed_course
+  examples: |
+    - Which students have completed [COMP 6721](course)?
+
+
+#13. Print a transcript for a [student], listing all the course taken with their grades.
+- intent: about_student_transcript
+  examples: |
+    - Transcript for [AyakaKamisotu](student)
+    - Provide the transcript for [AyakaKamisotu](student)
+    - Student transcript for [AyakaKamisotu](student)    
+
+#14
+- intent: about_course
+  examples: |
+    - What is course [COMP 6741](course) about?
+    - What is [FBRS 481](course) about?
+    - What is [FINA 405](course) about?
+    - What is [GEOG 210](course) about?
+
+#15
+- intent: about_course_event
+  examples: |
+    - List the topics and resources covered in [Lab 2](courseEvent) of [COMP 6721]?
+
+#16
+- intent: about_course_topicevent
+  examples: |
+    - Which course events cover [FOAF_ontology](topic)?
+
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

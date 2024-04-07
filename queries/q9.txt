@@ -31,6 +31,6 @@ WHERE {
   ?lab a focu:Lab;
   focu:coversTopic ?topic.
 
-  FILTER (?topicLable = "Decision_Trees")
+  FILTER (?topicLable = "Bayes_theorem")
   FILTER(?courseNumber = "6721" && ?courseSubject = "COMP")
 }

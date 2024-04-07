@@ -1,2 +1,5 @@
 "courseSubject","courseNumber","courseName","topicLable","slide","worksheet","lab"
-"COMP","6721","APPLIED ARTIFICIAL INTELLIGENCE","Decision_Trees","http://localhost:3030/play/courses/COMP6721/LEC/LS05.pdf","http://localhost:3030/play/courses/COMP6721/WKS/WS04.pdf","http://localhost:3030/play/courses/COMP6721/LAB/LE05.pdf"
+"COMP","6741","INTELLIGENT SYSTEMS","K-means_clustering","http://localhost:3030/play/courses/COMP6721/LEC/LS10.pdf","http://localhost:3030/play/courses/COMP6721/WKS/WS04.pdf","http://localhost:3030/play/courses/COMP6721/LAB/LE05.pdf"
+"COMP","6741","INTELLIGENT SYSTEMS","K-means_clustering","http://localhost:3030/play/courses/COMP6721/LEC/LS04.pdf","http://localhost:3030/play/courses/COMP6721/WKS/WS04.pdf","http://localhost:3030/play/courses/COMP6721/LAB/LE05.pdf"
+"COMP","6741","INTELLIGENT SYSTEMS","K-means_clustering","http://localhost:3030/play/courses/COMP6721/LEC/LS05.pdf","http://localhost:3030/play/courses/COMP6721/WKS/WS04.pdf","http://localhost:3030/play/courses/COMP6721/LAB/LE05.pdf"
+"COMP","6741","INTELLIGENT SYSTEMS","K-means_clustering","http://localhost:3030/play/courses/COMP6741/LEC/LS06.pdf","http://localhost:3030/play/courses/COMP6721/WKS/WS04.pdf","http://localhost:3030/play/courses/COMP6721/LAB/LE05.pdf"

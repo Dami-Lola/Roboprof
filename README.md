@@ -47,6 +47,9 @@ Install the following libraries in the development env
 ```
 pip install pandas
 pip install rdflib
+pip install tika
+pip install pyspotlight
+pip install rasa
 ```
 
 ## PROCESS
@@ -65,6 +68,8 @@ To test the queries, follow the steps below to setup Triplestore and SPARQL Endp
 6) Upload the GraphData.ttl file(including the student.ttl) to the server.
 7) Copy and paste each query to run
 
+## RASE ChatBot
+.....
 
 ## Authors (Contributors)
 * **Oluwadamilola Okafor - Evaluation Specialist**
