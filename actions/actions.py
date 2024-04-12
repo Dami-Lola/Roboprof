@@ -343,7 +343,7 @@ class ActionRecommendedMaterials(Action):
                   focu:courseSubject ?courseSubject;
                   focu:courseName ?courseName ;
                   focu:coversTopic focudata:%s .
-                
+                  
                   FILTER (?courseNumber = "%s" && ?courseSubject = "%s")
                 }
         """ % (topic, topic, course_number, course_subject)
@@ -372,7 +372,9 @@ class ActionRecommendedMaterials(Action):
 
                 dispatcher.utter_message(text=f"Here are the reading materials for {courseName}({course_subject}{course_number}) on {topicLabel}.\n")
                 for slide in slides:
-                    dispatcher.utter_message(text=f"{slide}")
+                    sampleString = slide
+                    slideString = sampleString.split('/')
+                    dispatcher.utter_message(text=f"{slideString[len(slideString) - 1]}")
             else:
                 dispatcher.utter_message(text=f"Sorry, I couldn't find course information in Concordia University")
         except requests.exceptions.RequestException as e:
@@ -541,7 +543,7 @@ class ActionContentCourseLecture(Action):
                 PREFIX ex: <http://example.org/>
                 
                 #8. Detail the content (slides, worksheets, readings) available for [lecture number] in [course] [number].
-                SELECT DISTINCT ?courseName ?lecture ?content
+                SELECT DISTINCT ?courseName ?lecture ?content ?lab ?worksheet
                 WHERE {
                   ?course a focu:Course ;
                   focu:courseNumber ?courseNumber;
@@ -576,6 +578,8 @@ class ActionContentCourseLecture(Action):
                 results = response_json['results']['bindings']
                 courseName = ''
                 courseContent = []
+                labContent = []
+                worksheetContent = []
                 for result in results:
                     for key in result:
                         if key == "courseName":
@@ -586,11 +590,33 @@ class ActionContentCourseLecture(Action):
                             for innerKey in result[key]:
                                 if innerKey == "value":
                                     courseContent.append(result[key][innerKey])
+                        if key == "lab":
+                            for innerKey in result[key]:
+                                if innerKey == "value":
+                                    labContent.append(result[key][innerKey])
+                        if key == "worksheet":
+                            for innerKey in result[key]:
+                                if innerKey == "value":
+                                    worksheetContent.append(result[key][innerKey])
                 dispatcher.utter_message(
                     text=f"Find below detailed content for lecture {lecture_number}, in {courseName}({course_subject}{course_number}) "
                          f"covered the following topics: \n")
                 for content in courseContent:
-                    dispatcher.utter_message(text=f"{content}\n")
+                    sampleString = content
+                    contentString = sampleString.split('/')
+                    if 'data#' not in contentString[len(contentString) - 1]:
+                        dispatcher.utter_message(text=f"{contentString[len(contentString) - 1]}")
+                    # dispatcher.utter_message(text=f"{content}\n")
+                if len(labContent) != 0:
+                    for labCon in labContent:
+                        sampleString = labCon
+                        labString = sampleString.split('/')
+                        dispatcher.utter_message(text=f"{labString[len(labString) - 1]}")
+                if len(worksheetContent) != 0:
+                    for workSCon in worksheetContent:
+                        sampleString = workSCon
+                        worksheetString = sampleString.split('/')
+                        dispatcher.utter_message(text=f"{worksheetString[len(worksheetString) - 1]}")
             else:
                 dispatcher.utter_message(text=f"Sorry, I couldn't find course information in Concordia University")
         except requests.exceptions.RequestException as e:
@@ -685,7 +711,10 @@ class ActionMaterials(Action):
                 dispatcher.utter_message(
                     text=f"Here are the recommended reading materials for {courseName}({course_subject}{course_number}) on {topicLabel}.\n")
                 for slide in slides:
-                    dispatcher.utter_message(text=f"{slide}")
+                    sampleString = slide
+                    slideString = sampleString.split('/')
+                    dispatcher.utter_message(text=f"{slideString[len(slideString) - 1]}")
+                    # dispatcher.utter_message(text=f"{slide}")
             else:
                 dispatcher.utter_message(text=f"Sorry, I couldn't find course information in Concordia University")
         except requests.exceptions.RequestException as e:

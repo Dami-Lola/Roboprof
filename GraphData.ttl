@@ -4,7 +4,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex: <http://example.org/> .
-@prefix ex: <http://example.org/> .
 
 ex:AyakaKamisotu a focu:Student ;
     focu:studentEmail "ayakakamisotu@live.concordia.ca" ;
@@ -21,13 +20,9 @@ ex:AyakaKamisotu a focu:Student ;
     [
         focu:courseCode focudata:COMP6741 ;
         focu:gradeAchieved "B+" ;
-        focu:competencyInTopic focudata:Confusion_matrix,
-                               focudata:Cross-validation_statistics,
-                               focudata:Decision_tree_learning
-    ],
-    [
-        focu:courseCode focudata:COMP691 ;
-        focu:gradeAchieved "F-"
+        focu:competencyInTopic focudata:Named-entity_recognition,
+                               focudata:Open_data,
+                               focudata:Public_Knowledge
     ],
     [
         focu:courseCode focudata:COMS205 ;
@@ -61,7 +56,7 @@ ex:RaidenShogun a focu:Student ;
     [
         focu:courseCode focudata:COMP6741 ;
         focu:gradeAchieved "B+" ;
-        focu:competencyInTopic focudata:ELIZA,
+        focu:competencyInTopic focudata:Intelligent_agent,
                                focudata:Euclidean_distance,
                                focudata:FOAF_ontology
     ],
@@ -97,7 +92,7 @@ ex:SaraKujou a focu:Student ;
     [
         focu:courseCode focudata:COMP6741 ;
         focu:gradeAchieved "A+" ;
-        focu:competencyInTopic focudata:Intelligent_agent,
+        focu:competencyInTopic focudata:Binary_logarithm,
                                focudata:Natural_language_processing,
                                focudata:Open_data
     ],
@@ -175,8 +170,6 @@ ex:YunJin a focu:Student ;
         focu:courseCode focudata:FMPR435 ;
         focu:gradeAchieved "A+"
     ].
-
-
 <courses/COMP6721/LAB/LE01.pdf> a focu:Lab ;
     focu:coversTopic focudata:AI_winter,
         focudata:ALPAC,
@@ -198,7 +191,6 @@ ex:YunJin a focu:Student ;
         focudata:Chatbot,
         focudata:City,
         focudata:Classical_logic,
-        focudata:Common_Lisp,
         focudata:Computer_algebra,
         focudata:Cornell_University,
         focudata:Cortes_Generales,
@@ -217,16 +209,13 @@ ex:YunJin a focu:Student ;
         focudata:Generative_adversarial_network,
         focudata:Geoffrey_Hinton,
         focudata:Geoffrey_of_Monmouth,
-        focudata:Go_game,
         focudata:Google,
         focudata:Google_Translate,
         focudata:Handwriting_recognition,
         focudata:ImageNet,
-        focudata:James_Lighthill,
         focudata:Joseph_Weizenbaum,
         focudata:Knowledge_base,
         focudata:Language_model,
-        focudata:Lisp_programming_language,
         focudata:MNIST_database,
         focudata:Machine_learning,
         focudata:Machine_translation,
@@ -243,7 +232,6 @@ ex:YunJin a focu:Student ;
         focudata:Pathogenic_bacteria,
         focudata:Perceptron,
         focudata:Programming_language,
-        focudata:Prolog,
         focudata:Robotics,
         focudata:Rule-based_machine_translation,
         focudata:Rule-based_system,
@@ -256,7 +244,6 @@ ex:YunJin a focu:Student ;
         focudata:Toronto,
         focudata:Turing_Award,
         focudata:Turing_test,
-        focudata:Unicorn,
         focudata:University_of_Alberta,
         focudata:Vladimir_Vapnik,
         focudata:Yann_LeCun,
@@ -290,14 +277,11 @@ ex:YunJin a focu:Student ;
         focudata:OpenAI,
         focudata:Open_list,
         focudata:Pac-Man,
-        focudata:Pop_music,
-        focudata:Puzzle,
         focudata:Pythonidae,
         focudata:Search_algorithm,
         focudata:Source_code,
         focudata:Stack_abstract_data_type,
         focudata:Subroutine,
-        focudata:Test_cricket,
         focudata:Tree_structure,
         focudata:USB,
         focudata:Unit_testing,
@@ -342,13 +326,11 @@ ex:YunJin a focu:Student ;
         focudata:Decimal,
         focudata:Email_spam,
         focudata:Feature_machine_learning,
-        focudata:Foraging,
         focudata:Frequency,
         focudata:Google,
         focudata:Great_egret,
         focudata:Harris_Geospatial,
         focudata:Hungarian_National_Bank,
-        focudata:Image_scanner,
         focudata:Jack_Harkness,
         focudata:Kami,
         focudata:Library,
@@ -376,9 +358,7 @@ ex:YunJin a focu:Student ;
         focudata:Alkali_metal,
         focudata:Canada,
         focudata:Centroid,
-        focudata:Cluster_analysis,
         focudata:Computer,
-        focudata:Computer_animation,
         focudata:Confusion_matrix,
         focudata:Creative_Commons_license,
         focudata:Data,
@@ -415,7 +395,6 @@ ex:YunJin a focu:Student ;
         focudata:Open-source_software,
         focudata:Partition_of_a_set,
         focudata:Petal,
-        focudata:Preprocessor,
         focudata:Pythonidae,
         focudata:Quebec,
         focudata:Scikit-learn,
@@ -424,7 +403,6 @@ ex:YunJin a focu:Student ;
         focudata:Statistical_classification,
         focudata:String_theory,
         focudata:Subroutine,
-        focudata:Subset,
         focudata:Training_validation_and_test_sets,
         focudata:Tree_structure,
         focudata:Unsupervised_learning .
@@ -449,7 +427,6 @@ ex:YunJin a focu:Student ;
         focudata:Cross-validation_statistics,
         focudata:Definiteness_of_a_matrix,
         focudata:Euclidean_vector,
-        focudata:Exclusive_or,
         focudata:False_positives_and_false_negatives,
         focudata:Feature_machine_learning,
         focudata:Final_Score,
@@ -465,7 +442,6 @@ ex:YunJin a focu:Student ;
         focudata:Linear_separability,
         focudata:MNIST_database,
         focudata:Machine_learning,
-        focudata:Macroscopic_scale,
         focudata:Microeconomics,
         focudata:Modem,
         focudata:Monty_Python,
@@ -483,7 +459,6 @@ ex:YunJin a focu:Student ;
         focudata:Statistical_classification,
         focudata:Step_function,
         focudata:Subroutine,
-        focudata:Subset,
         focudata:The_Advantage,
         focudata:Training_validation_and_test_sets,
         focudata:Trans_woman,
@@ -498,7 +473,6 @@ ex:YunJin a focu:Student ;
         focudata:Bird_flight,
         focudata:Blueprint,
         focudata:CONFIGSYS,
-        focudata:Computer-assisted_telephone_interviewing,
         focudata:Computer_architecture,
         focudata:Computer_vision,
         focudata:Convolution,
@@ -542,14 +516,12 @@ ex:YunJin a focu:Student ;
         focudata:Normalnull,
         focudata:Noun_phrase,
         focudata:NumPy,
-        focudata:Overfitting,
         focudata:PyTorch,
         focudata:Pythonidae,
         focudata:RGB_color_model,
         focudata:Railroad_switch,
         focudata:Rectifier_neural_networks,
         focudata:Scikit-learn,
-        focudata:Shuffling,
         focudata:Singapore_dollar,
         focudata:Softmax_function,
         focudata:Subroutine,
@@ -571,7 +543,6 @@ ex:YunJin a focu:Student ;
         focudata:Concordia_University,
         focudata:Data_analysis,
         focudata:Email,
-        focudata:Exclusive_or,
         focudata:FOAF_ontology,
         focudata:Filename_extension,
         focudata:First-order_logic,
@@ -590,15 +561,12 @@ ex:YunJin a focu:Student ;
         focudata:Knowledge_Graph,
         focudata:Knowledge_base,
         focudata:Linked_data,
-        focudata:Look_American_magazine,
         focudata:Main_Page,
         focudata:McGill_University,
         focudata:Montreal,
         focudata:N-Triples,
         focudata:Ontology_information_science,
         focudata:Open-source_software,
-        focudata:Parsing,
-        focudata:Printing,
         focudata:Provenance,
         focudata:Pythonidae,
         focudata:RDF_Schema,
@@ -606,7 +574,6 @@ ex:YunJin a focu:Student ;
         focudata:SQL,
         focudata:Sea_urchin,
         focudata:Subroutine,
-        focudata:Substring,
         focudata:Subtraction,
         focudata:Triplestore,
         focudata:Uniform_Resource_Identifier,
@@ -636,7 +603,6 @@ ex:YunJin a focu:Student ;
         focudata:Google_Assistant,
         focudata:Graph_database,
         focudata:Heredity,
-        focudata:Inference,
         focudata:Infor,
         focudata:Internet_slang,
         focudata:Ion,
@@ -651,7 +617,6 @@ ex:YunJin a focu:Student ;
         focudata:Ontology_information_science,
         focudata:Pattern_matching,
         focudata:Pattern_recognition,
-        focudata:Printing,
         focudata:Quebec,
         focudata:Question_mark,
         focudata:RDF_Schema,
@@ -665,7 +630,6 @@ ex:YunJin a focu:Student ;
         focudata:Social_class,
         focudata:Software_agent,
         focudata:Stu_Hart,
-        focudata:Substring,
         focudata:Uniform_Resource_Identifier,
         focudata:World_War_II .
 
@@ -701,7 +665,6 @@ ex:YunJin a focu:Student ;
         focudata:Indus_River,
         focudata:Innovation,
         focudata:Instruction_pipelining,
-        focudata:Interaction,
         focudata:Jane_Beale,
         focudata:Jimmy_Olsen,
         focudata:Jonathan_and_Martha_Kent,
@@ -730,7 +693,6 @@ ex:YunJin a focu:Student ;
         focudata:Planetary_nebula,
         focudata:Polypropylene,
         focudata:PowerPC_Reference_Platform,
-        focudata:Preprocessor,
         focudata:Presidency_of_Barack_Obama,
         focudata:Privacy,
         focudata:Pythonidae,
@@ -748,7 +710,6 @@ ex:YunJin a focu:Student ;
         focudata:United_Kingdom,
         focudata:Verb,
         focudata:Verb_phrase,
-        focudata:Vigilantism,
         focudata:Web_search_engine .
 
 <courses/COMP6721/LEC/LS01.pdf> a focu:Slides ;
@@ -769,13 +730,11 @@ ex:YunJin a focu:Student ;
         focudata:Chatbot,
         focudata:Chess,
         focudata:Clyde_Stubblefield,
-        focudata:Cognitive_bias,
         focudata:Cognitive_psychology,
         focudata:Computer,
         focudata:Computer_chess,
         focudata:Computer_science,
         focudata:Consciousness,
-        focudata:Contract_killing,
         focudata:Data_mining,
         focudata:Decomposition,
         focudata:Deep_learning,
@@ -855,9 +814,7 @@ ex:YunJin a focu:Student ;
         focudata:Algorithm,
         focudata:Amnesia,
         focudata:Artificial_intelligence,
-        focudata:Backtracking,
         focudata:Basic_block,
-        focudata:Ben_Webster,
         focudata:Best-first_search,
         focudata:Big_Bang,
         focudata:Bitwise_operation,
@@ -908,8 +865,6 @@ ex:YunJin a focu:Student ;
         focudata:Motivation,
         focudata:N_postcode_area,
         focudata:National_Highways_of_Pakistan,
-        focudata:Notation3,
-        focudata:Null_pointer,
         focudata:Open_list,
         focudata:Pareto_efficiency,
         focudata:Perception,
@@ -918,7 +873,6 @@ ex:YunJin a focu:Student ;
         focudata:Plateau,
         focudata:Priority_queue,
         focudata:Professional_wrestling_double-team_maneuvers,
-        focudata:Puzzle,
         focudata:Rich_Hardbeck,
         focudata:Robotics,
         focudata:Rugby_union_positions,
@@ -972,7 +926,6 @@ ex:YunJin a focu:Student ;
         focudata:Garry_Kasparov,
         focudata:Gene_ontology,
         focudata:Gigabyte,
-        focudata:Go_game,
         focudata:Haruki_Murakami,
         focudata:Heuristic,
         focudata:Heuristic_computer_science,
@@ -1039,7 +992,6 @@ ex:YunJin a focu:Student ;
         focudata:Amateur_radio,
         focudata:Ambulance,
         focudata:Anti-spam_techniques,
-        focudata:Arithmetic_underflow,
         focudata:Array_data_structure,
         focudata:Artificial_intelligence,
         focudata:Audi_A3,
@@ -1060,8 +1012,6 @@ ex:YunJin a focu:Student ;
         focudata:CXCR4,
         focudata:Cervical_vertebrae,
         focudata:Chain_rule,
-        focudata:Chief_Justice_of_Australia,
-        focudata:Cluster_analysis,
         focudata:Coin,
         focudata:Command_and_control,
         focudata:Computer_program,
@@ -1114,7 +1064,6 @@ ex:YunJin a focu:Student ;
         focudata:Laptop,
         focudata:Linear_regression,
         focudata:Logistic_regression,
-        focudata:Look_American_magazine,
         focudata:MNIST_database,
         focudata:Machine_learning,
         focudata:Measles,
@@ -1130,7 +1079,6 @@ ex:YunJin a focu:Student ;
         focudata:Nice,
         focudata:No_Glee,
         focudata:Numerical_digit,
-        focudata:Optical_filter,
         focudata:Pasta,
         focudata:Pixel,
         focudata:Postal_code,
@@ -1140,9 +1088,7 @@ ex:YunJin a focu:Student ;
         focudata:Probabilistic_classification,
         focudata:Probability,
         focudata:Probability_distribution_function,
-        focudata:Pruning,
         focudata:Q-learning,
-        focudata:Referee,
         focudata:Regression_analysis,
         focudata:Reinforcement,
         focudata:Reinforcement_learning,
@@ -1158,12 +1104,8 @@ ex:YunJin a focu:Student ;
         focudata:Statistical_hypothesis_testing,
         focudata:Statistical_model,
         focudata:Stock_Exchange_of_Thailand,
-        focudata:Stove,
         focudata:Summer,
-        focudata:Target_Corporation,
         focudata:Temperature,
-        focudata:Tennis,
-        focudata:Test_cricket,
         focudata:The_Evidence_TV_series,
         focudata:Thin-film-transistor_liquid-crystal_display,
         focudata:Toilet_paper,
@@ -1171,8 +1113,7 @@ ex:YunJin a focu:Student ;
         focudata:Training_validation_and_test_sets,
         focudata:United_States,
         focudata:Unsupervised_learning,
-        focudata:VicRail_N_type_carriage,
-        focudata:White_dwarf .
+        focudata:VicRail_N_type_carriage .
 
 <courses/COMP6721/LEC/LS05.pdf> a focu:Slides ;
     focu:coversTopic focudata:50_caliber_gun,
@@ -1201,7 +1142,6 @@ ex:YunJin a focu:Student ;
         focudata:Claude_Shannon,
         focudata:Cluster_analysis,
         focudata:Coin,
-        focudata:Coin_flipping,
         focudata:College_of_Osteopathic_Medicine_of_the_Pacific,
         focudata:Command_and_control,
         focudata:Complicated_Avril_Lavigne_song,
@@ -1229,7 +1169,6 @@ ex:YunJin a focu:Student ;
         focudata:Entropy,
         focudata:Essence,
         focudata:Euclidean_distance,
-        focudata:Extrapolation,
         focudata:F1_hybrid,
         focudata:F1_score,
         focudata:Fair_coin,
@@ -1246,7 +1185,6 @@ ex:YunJin a focu:Student ;
         focudata:Gradient_descent,
         focudata:Handwriting_recognition,
         focudata:Harmonic,
-        focudata:Heart_sounds,
         focudata:Herbert_A_Simon,
         focudata:Heuristic,
         focudata:Hewlett-Packard,
@@ -1265,12 +1203,10 @@ ex:YunJin a focu:Student ;
         focudata:Karyotype,
         focudata:Lead,
         focudata:London,
-        focudata:Look_American_magazine,
         focudata:Machine_learning,
         focudata:Medication,
         focudata:Metric_space,
         focudata:Milwaukee_Road_class_F7,
-        focudata:Misfit_stream,
         focudata:Mitchell_family,
         focudata:Modem,
         focudata:Moustache,
@@ -1279,7 +1215,6 @@ ex:YunJin a focu:Student ;
         focudata:Netflix,
         focudata:Outlier,
         focudata:Outline_of_object_recognition,
-        focudata:Overfitting,
         focudata:Partition_coefficient,
         focudata:Partition_of_India,
         focudata:Partition_of_a_set,
@@ -1297,7 +1232,6 @@ ex:YunJin a focu:Student ;
         focudata:Reinforcement_learning,
         focudata:Rigveda,
         focudata:Rote_learning,
-        focudata:Rubidium,
         focudata:Salmon,
         focudata:Semiconductor_device_fabrication,
         focudata:Smoothness,
@@ -1309,7 +1243,6 @@ ex:YunJin a focu:Student ;
         focudata:Supervised_learning,
         focudata:T1_space,
         focudata:Thai_language,
-        focudata:The_Matrix,
         focudata:The_Restaurant_Irish_TV_series,
         focudata:Thin-film-transistor_liquid-crystal_display,
         focudata:Thiol,
@@ -1341,7 +1274,6 @@ ex:YunJin a focu:Student ;
         focudata:Backpropagation,
         focudata:Bertrand_Russell,
         focudata:Bias,
-        focudata:Bias_of_an_estimator,
         focudata:Binary_number,
         focudata:Biology,
         focudata:Bit_array,
@@ -1365,7 +1297,6 @@ ex:YunJin a focu:Student ;
         focudata:Gamma_ray,
         focudata:Gradient,
         focudata:Gradient_descent,
-        focudata:Handwriting,
         focudata:Handwriting_recognition,
         focudata:Herbert_A_Simon,
         focudata:Hidden_node_problem,
@@ -1400,7 +1331,6 @@ ex:YunJin a focu:Student ;
         focudata:Rule-based_system,
         focudata:Semiconductor_device_fabrication,
         focudata:Seymour_Papert,
-        focudata:Shuffling,
         focudata:Sigmoid_function,
         focudata:Sign_function,
         focudata:Singapore_dollar,
@@ -1410,7 +1340,6 @@ ex:YunJin a focu:Student ;
         focudata:Stochastic,
         focudata:Stochastic_process,
         focudata:Synapse,
-        focudata:Target_Corporation,
         focudata:The_Idea_wordless_novel,
         focudata:Training_validation_and_test_sets,
         focudata:Transfer_function,
@@ -1433,7 +1362,6 @@ ex:YunJin a focu:Student ;
         focudata:BMW_X5,
         focudata:BMW_X6,
         focudata:Backpropagation,
-        focudata:Bias,
         focudata:Blog,
         focudata:Bosnia_and_Herzegovina,
         focudata:Browser_Helper_Object,
@@ -1452,7 +1380,6 @@ ex:YunJin a focu:Student ;
         focudata:Edge_detection,
         focudata:Edmonton,
         focudata:Error_function,
-        focudata:Face,
         focudata:Feature_detection_computer_vision,
         focudata:Feature_engineering,
         focudata:Feature_learning,
@@ -1468,7 +1395,6 @@ ex:YunJin a focu:Student ;
         focudata:Human_brain,
         focudata:Ilya_Kabakov,
         focudata:ImageNet,
-        focudata:Impose_magazine,
         focudata:Inception,
         focudata:Kernel_method,
         focudata:Linguistics,
@@ -1491,7 +1417,6 @@ ex:YunJin a focu:Student ;
         focudata:Open_access,
         focudata:Optical_filter,
         focudata:Outline_of_object_recognition,
-        focudata:Overfitting,
         focudata:Padding,
         focudata:Phoneme,
         focudata:Pixel,
@@ -1512,7 +1437,6 @@ ex:YunJin a focu:Student ;
         focudata:Supervised_learning,
         focudata:Support-vector_machine,
         focudata:The_Features,
-        focudata:The_Matrix,
         focudata:The_Weight,
         focudata:Toronto,
         focudata:Training_validation_and_test_sets,
@@ -1541,7 +1465,6 @@ ex:YunJin a focu:Student ;
         focudata:Chronic_condition,
         focudata:City,
         focudata:Compact_disc,
-        focudata:Conscription,
         focudata:Cormac_McCarthy,
         focudata:Cyc,
         focudata:DBpedia,
@@ -1621,7 +1544,6 @@ ex:YunJin a focu:Student ;
         focudata:Ontology_information_science,
         focudata:Open_Mind_Common_Sense,
         focudata:Open_standard,
-        focudata:PDF,
         focudata:PHP,
         focudata:Perceptron,
         focudata:Personalized_medicine,
@@ -1634,7 +1556,6 @@ ex:YunJin a focu:Student ;
         focudata:Quality_assurance,
         focudata:RDF_Schema,
         focudata:RDFa,
-        focudata:Reading,
         focudata:Resource_Description_Framework,
         focudata:SHRDLU,
         focudata:SPARQL,
@@ -1711,7 +1632,6 @@ ex:YunJin a focu:Student ;
         focudata:Interoperability,
         focudata:Kindergarten,
         focudata:Knowledge_Graph,
-        focudata:LNER_Class_P2,
         focudata:Layer_cake,
         focudata:Le_Palais,
         focudata:Linked_data,
@@ -1735,12 +1655,10 @@ ex:YunJin a focu:Student ;
         focudata:Poems_by_Edgar_Allan_Poe,
         focudata:Pokmon,
         focudata:Precision_medicine,
-        focudata:Prefix,
         focudata:Prince_Iaukea,
         focudata:Proprietary_software,
         focudata:Question_answering,
         focudata:RDF_Schema,
-        focudata:Reading,
         focudata:Recursion,
         focudata:Resource_Description_Framework,
         focudata:SPARQL,
@@ -1787,7 +1705,6 @@ ex:YunJin a focu:Student ;
         focudata:Anno_Domini,
         focudata:Apollo_Lunar_Module,
         focudata:Apple_Inc,
-        focudata:Arithmetic_underflow,
         focudata:Artificial_intelligence,
         focudata:Artificial_neural_network,
         focudata:Asian_Development_Bank,
@@ -1818,10 +1735,8 @@ ex:YunJin a focu:Student ;
         focudata:Coffee,
         focudata:Comma,
         focudata:Compact_disc,
-        focudata:Compact_space,
         focudata:Composite_material,
         focudata:Computer,
-        focudata:Computer_mouse,
         focudata:Computer_science,
         focudata:Conditional_probability,
         focudata:Constituent_linguistics,
@@ -1842,7 +1757,6 @@ ex:YunJin a focu:Student ;
         focudata:Electric_guitar,
         focudata:Email_filtering,
         focudata:Email_spam,
-        focudata:Embedding,
         focudata:English_language,
         focudata:Euclidean_vector,
         focudata:European_Central_Bank,
@@ -1864,20 +1778,17 @@ ex:YunJin a focu:Student ;
         focudata:Google_Ngram_Viewer,
         focudata:Google_Search,
         focudata:Governor,
-        focudata:Gram,
         focudata:Grammar,
         focudata:Grand_Duchess_Olga_Nikolaevna_of_Russia,
         focudata:Gringo,
         focudata:Group_N,
         focudata:Handwriting,
-        focudata:Heart_sounds,
         focudata:Helicopter,
         focudata:Heuristic,
         focudata:Hosni_Mubarak,
         focudata:Hypothesis,
         focudata:IBM,
         focudata:ING_Group,
-        focudata:Ibuprofen,
         focudata:Information_extraction,
         focudata:Information_retrieval,
         focudata:Internet_Explorer,
@@ -1889,7 +1800,6 @@ ex:YunJin a focu:Student ;
         focudata:Jimmy_Carter,
         focudata:John_1,
         focudata:John_V_Palaiologos,
-        focudata:Joint_Electronics_Type_Designation_System,
         focudata:Joule,
         focudata:Juvenile_court,
         focudata:K-means_clustering,
@@ -1975,8 +1885,6 @@ ex:YunJin a focu:Student ;
         focudata:Silk,
         focudata:Sleep,
         focudata:Smooth_Radio,
-        focudata:Smoothing,
-        focudata:SoltyRei,
         focudata:Soup,
         focudata:Spanish_language,
         focudata:Speech_processing,
@@ -1988,13 +1896,10 @@ ex:YunJin a focu:Student ;
         focudata:Subroutine,
         focudata:Sue_Dibny,
         focudata:Supervised_learning,
-        focudata:Swimming,
         focudata:Symbolic_artificial_intelligence,
         focudata:Syntax,
         focudata:Syntax_error,
-        focudata:Target_Corporation,
         focudata:The_Chronicles_of_Thomas_Covenant,
-        focudata:Times_Higher_Education,
         focudata:Toffee,
         focudata:Tonne,
         focudata:Top-down_parsing,
@@ -2013,7 +1918,6 @@ ex:YunJin a focu:Student ;
         focudata:Word-sense_disambiguation,
         focudata:Word_order,
         focudata:World_Bank,
-        focudata:Zoophyte,
         focudata:Zucchini .
 
 <courses/COMP6721/LEC/LS11.pdf> a focu:Slides ;
@@ -2026,12 +1930,10 @@ ex:YunJin a focu:Student ;
         focudata:Apricot,
         focudata:Artificial_intelligence,
         focudata:Artificial_neural_network,
-        focudata:Autoencoder,
         focudata:BMW_X5,
         focudata:BMW_X6,
         focudata:Backpropagation,
         focudata:Banana,
-        focudata:Bias,
         focudata:Binary_star,
         focudata:Blog,
         focudata:Cole_Howard,
@@ -2045,7 +1947,6 @@ ex:YunJin a focu:Student ;
         focudata:Dimension,
         focudata:Dog,
         focudata:Dot_product,
-        focudata:Embedding,
         focudata:Feedforward_neural_network,
         focudata:Furry_fandom,
         focudata:GUID_Partition_Table,
@@ -2055,7 +1956,6 @@ ex:YunJin a focu:Student ;
         focudata:Google_Translate,
         focudata:Histone_H3,
         focudata:Hydrogen,
-        focudata:Impose_magazine,
         focudata:Italy,
         focudata:Learning_rate,
         focudata:Logical_conjunction,
@@ -2078,16 +1978,12 @@ ex:YunJin a focu:Student ;
         focudata:Pythonidae,
         focudata:Question_answering,
         focudata:Recurrent_neural_network,
-        focudata:Ruby,
         focudata:Softmax_function,
         focudata:Spain,
         focudata:Speech_recognition,
         focudata:Statistical_classification,
         focudata:Subroutine,
-        focudata:Swimming,
         focudata:T-carrier,
-        focudata:Target_Corporation,
-        focudata:The_Matrix,
         focudata:The_Weight,
         focudata:Thyroid_hormones,
         focudata:Training_validation_and_test_sets,
@@ -2099,7 +1995,6 @@ ex:YunJin a focu:Student ;
 
 <courses/COMP6721/OUT/course_outline_comp6721.pdf> a focu:courseOutline ;
     focu:coversTopic focudata:Abstract_and_concrete,
-        focudata:Acquire,
         focudata:Active_learning,
         focudata:Algebra,
         focudata:Algorithm,
@@ -2115,10 +2010,7 @@ ex:YunJin a focu:Student ;
         focudata:Computer_science,
         focudata:Concordia_University,
         focudata:Convolutional_neural_network,
-        focudata:Curve,
-        focudata:Data_pre-processing,
         focudata:Death_of_a_Naturalist,
-        focudata:Debugging,
         focudata:Decision_tree_learning,
         focudata:Deep_learning,
         focudata:Emergency_medical_services,
@@ -2142,7 +2034,6 @@ ex:YunJin a focu:Student ;
         focudata:Problem_solving,
         focudata:PyTorch,
         focudata:Recurrent_neural_network,
-        focudata:Reverse-Flash,
         focudata:Rotary_International,
         focudata:Samuel_Franklin_Cody,
         focudata:Scikit-learn,
@@ -2169,7 +2060,6 @@ ex:YunJin a focu:Student ;
         focudata:ISO_216,
         focudata:Open_list,
         focudata:Priority_queue,
-        focudata:Puzzle,
         focudata:Rugby_union_positions,
         focudata:Scientific_pitch_notation,
         focudata:Semiconductor_device_fabrication,
@@ -2234,11 +2124,9 @@ ex:YunJin a focu:Student ;
 
 <courses/COMP6721/WKS/WS04.pdf> a focu:Worksheet ;
     focu:coversTopic focudata:Almost_surely,
-        focudata:Amazon_S3,
         focudata:Binary_logarithm,
         focudata:Calculator,
         focudata:Centroid,
-        focudata:Cluster_analysis,
         focudata:College_of_Osteopathic_Medicine_of_the_Pacific,
         focudata:Command_and_control,
         focudata:Common_logarithm,
@@ -2267,11 +2155,9 @@ ex:YunJin a focu:Student ;
         focudata:Artificial_neural_network,
         focudata:Artificial_neuron,
         focudata:Backpropagation,
-        focudata:Bias_of_an_estimator,
         focudata:Delta_State,
         focudata:Eric_Roberson,
         focudata:Errors_and_residuals,
-        focudata:Exclusive_or,
         focudata:Executive_officer,
         focudata:Fluorescent_lamp,
         focudata:Gamma_ray,
@@ -2291,7 +2177,6 @@ ex:YunJin a focu:Student ;
         focudata:Artificial_neural_network,
         focudata:Artificial_neuron,
         focudata:Autoencoder,
-        focudata:Bias_of_an_estimator,
         focudata:Bosnia_and_Herzegovina,
         focudata:Browser_Helper_Object,
         focudata:Convolution,
@@ -2299,15 +2184,13 @@ ex:YunJin a focu:Student ;
         focudata:Deep_learning,
         focudata:Definiteness_of_a_matrix,
         focudata:Dot_product,
-        focudata:Filtration,
         focudata:Hydrogen,
         focudata:Hyperparameter,
         focudata:Integral_transform,
         focudata:Josh_Wink,
         focudata:Max_Cavalera,
         focudata:Sigmoid_function,
-        focudata:Subroutine,
-        focudata:The_Matrix .
+        focudata:Subroutine .
 
 <courses/COMP6721/WKS/WS07.pdf> a focu:Worksheet ;
     focu:coversTopic focudata:Artificial_intelligence,
@@ -2338,7 +2221,6 @@ ex:YunJin a focu:Student ;
         focudata:Public_Knowledge,
         focudata:Resource_Description_Framework,
         focudata:SQL,
-        focudata:The_Returned_French_TV_series,
         focudata:Theatrical_property,
         focudata:Uniform_Resource_Identifier,
         focudata:West_Digital_Television,
@@ -2362,7 +2244,6 @@ ex:YunJin a focu:Student ;
         focudata:Montreal,
         focudata:N-Triples,
         focudata:Operation_Brevity,
-        focudata:Prefix,
         focudata:Pseudocode,
         focudata:Quebec,
         focudata:RDF_Schema,
@@ -2391,14 +2272,12 @@ ex:YunJin a focu:Student ;
         focudata:Maximum_likelihood_estimation,
         focudata:Natural_language_processing,
         focudata:Parse_tree,
-        focudata:Parsing,
         focudata:Part-of-speech_tagging,
         focudata:Part_of_speech,
         focudata:Pierre-Simon_Laplace,
         focudata:Potomac_River,
         focudata:Probability,
         focudata:Sam_Winchester,
-        focudata:Smoothing,
         focudata:Training_validation_and_test_sets,
         focudata:United_Kingdom,
         focudata:Word-sense_disambiguation,
@@ -2407,7 +2286,6 @@ ex:YunJin a focu:Student ;
 <courses/COMP6721/WKS/WS10.pdf> a focu:Worksheet ;
     focu:coversTopic focudata:Alphabetical_order,
         focudata:Artificial_intelligence,
-        focudata:Bias_of_an_estimator,
         focudata:Deep_learning,
         focudata:Definiteness_of_a_matrix,
         focudata:Dimension,
@@ -2424,9 +2302,7 @@ ex:YunJin a focu:Student ;
         focudata:Qi,
         focudata:Secondary_School_Admission_Test,
         focudata:Softmax_function,
-        focudata:Stay_Tuned_film,
         focudata:Sushi,
-        focudata:Target_Corporation,
         focudata:Training_validation_and_test_sets,
         focudata:Vector_space,
         focudata:Word_embedding .
@@ -2434,7 +2310,6 @@ ex:YunJin a focu:Student ;
 <courses/COMP6741/LEC/LS01.pdf> a focu:Slides ;
     focu:coversTopic focudata:Abstract_and_concrete,
         focudata:Aidan_of_Lindisfarne,
-        focudata:Alice_and_Bob,
         focudata:Allan_Hobson,
         focudata:Amazon_Alexa,
         focudata:Amazon_rainforest,
@@ -2535,12 +2410,10 @@ ex:YunJin a focu:Student ;
         focudata:Performance_indicator,
         focudata:Personalization,
         focudata:Petroleum,
-        focudata:Phishing,
         focudata:Psychotherapy,
         focudata:Quality_assurance,
         focudata:Query_language,
         focudata:Question_answering,
-        focudata:Reading,
         focudata:Recommender_system,
         focudata:Refinitiv,
         focudata:Religion,
@@ -2554,7 +2427,6 @@ ex:YunJin a focu:Student ;
         focudata:Schizophrenia,
         focudata:Semantic_Web,
         focudata:Sentiment_analysis,
-        focudata:Sheffield,
         focudata:Silver,
         focudata:Siri,
         focudata:Slavery,
@@ -2563,9 +2435,7 @@ ex:YunJin a focu:Student ;
         focudata:Social_network,
         focudata:Software,
         focudata:Software_architecture,
-        focudata:Software_as_a_service,
         focudata:Software_engineering,
-        focudata:Software_license,
         focudata:Source_code,
         focudata:Stanford_University,
         focudata:Steve_Jobs,
@@ -2612,11 +2482,9 @@ ex:YunJin a focu:Student ;
         focudata:Bundesautobahn_2,
         focudata:CLOUD_experiment,
         focudata:City,
-        focudata:Cluster_analysis,
         focudata:College_of_Osteopathic_Medicine_of_the_Pacific,
         focudata:Compact_disc,
         focudata:Computer_science,
-        focudata:Conscription,
         focudata:Cyc,
         focudata:DBpedia,
         focudata:Data_integration,
@@ -2694,7 +2562,6 @@ ex:YunJin a focu:Student ;
         focudata:Open_access,
         focudata:Open_standard,
         focudata:Outfielder,
-        focudata:PDF,
         focudata:PHP,
         focudata:Parallel_computing,
         focudata:Perceptron,
@@ -2708,7 +2575,6 @@ ex:YunJin a focu:Student ;
         focudata:RAG_AG,
         focudata:RDF_Schema,
         focudata:RDFa,
-        focudata:Reading,
         focudata:Resource_Description_Framework,
         focudata:SHRDLU,
         focudata:SPARQL,
@@ -2761,7 +2627,6 @@ ex:YunJin a focu:Student ;
         focudata:Bhagat_Singh,
         focudata:Blog,
         focudata:Book_of_Ruth,
-        focudata:Bookselling,
         focudata:C0_and_C1_control_codes,
         focudata:Chapter_VII_of_the_United_Nations_Charter,
         focudata:Christianity,
@@ -2814,13 +2679,10 @@ ex:YunJin a focu:Student ;
         focudata:Ontology_information_science,
         focudata:Open_data,
         focudata:Pokmon,
-        focudata:Prefix,
         focudata:Programming_language,
-        focudata:Propaganda_Due,
         focudata:Proprietary_software,
         focudata:RDF_Schema,
         focudata:RDFa,
-        focudata:Reading,
         focudata:Recursion,
         focudata:Resource_Description_Framework,
         focudata:Runtime_system,
@@ -2851,7 +2713,6 @@ ex:YunJin a focu:Student ;
         focudata:Uniform_Resource_Name,
         focudata:United_States_Congress,
         focudata:Universe,
-        focudata:Urn,
         focudata:VVV-Venlo,
         focudata:Web_20,
         focudata:World_Wide_Web_Consortium,
@@ -2859,15 +2720,12 @@ ex:YunJin a focu:Student ;
 
 <courses/COMP6741/LEC/LS04.pdf> a focu:Slides ;
     focu:coversTopic focudata:AVG_AntiVirus,
-        focudata:Alice_and_Bob,
         focudata:Amazon_Web_Services,
         focudata:Amplitude-shift_keying,
         focudata:Amsterdam,
         focudata:Annotation,
         focudata:Apache_HTTP_Server,
-        focudata:Askcom,
         focudata:Auteur,
-        focudata:Axiom,
         focudata:BASE_jumping,
         focudata:BabelNet,
         focudata:Berlin,
@@ -2885,8 +2743,6 @@ ex:YunJin a focu:Student ;
         focudata:Clause,
         focudata:College_of_Osteopathic_Medicine_of_the_Pacific,
         focudata:Comma-separated_values,
-        focudata:Communication_protocol,
-        focudata:Compact_space,
         focudata:Complement_system,
         focudata:Computer_science,
         focudata:Currency,
@@ -2928,7 +2784,6 @@ ex:YunJin a focu:Student ;
         focudata:IBM_PC_DOS,
         focudata:Idiom,
         focudata:Inference,
-        focudata:Inheritance_object-oriented_programming,
         focudata:Insert_SQL,
         focudata:Inspector_general,
         focudata:Integral,
@@ -2980,21 +2835,18 @@ ex:YunJin a focu:Student ;
         focudata:Power-on_self-test,
         focudata:PowerPC_7xx,
         focudata:Power_Mac_G4,
-        focudata:Prefix,
         focudata:Programming_language,
         focudata:Protein,
         focudata:Public_Knowledge,
         focudata:Query_string,
         focudata:RDF_Schema,
         focudata:Race_and_intelligence,
-        focudata:Reading,
         focudata:Real_life,
         focudata:Reflexive_relation,
         focudata:Regular_expression,
         focudata:Resource_Description_Framework,
         focudata:Roman_Empire,
         focudata:Rule_Interchange_Format,
-        focudata:SOAP,
         focudata:SPARQL,
         focudata:SQL,
         focudata:Sebastian_of_Portugal,
@@ -3003,7 +2855,6 @@ ex:YunJin a focu:Student ;
         focudata:Semantic_triple,
         focudata:Serialization,
         focudata:Ship_class,
-        focudata:Signal_transduction,
         focudata:Silo,
         focudata:Simple_Knowledge_Organization_System,
         focudata:Sinclair_QL,
@@ -3040,7 +2891,6 @@ ex:YunJin a focu:Student ;
         focudata:World_Wide_Web_Consortium,
         focudata:X86,
         focudata:XHTML,
-        focudata:XML,
         focudata:XML_schema .
 
 <courses/COMP6741/LEC/LS05.pdf> a focu:Slides ;
@@ -3049,7 +2899,6 @@ ex:YunJin a focu:Student ;
         focudata:Amazon_rainforest,
         focudata:Anthony_Julius,
         focudata:Apparent_magnitude,
-        focudata:Askcom,
         focudata:Binary_logarithm,
         focudata:Bit_array,
         focudata:Blog,
@@ -3059,7 +2908,6 @@ ex:YunJin a focu:Student ;
         focudata:Cambridge_University_Press,
         focudata:Christopher_Tolkien,
         focudata:Cleopatra,
-        focudata:Coefficient,
         focudata:Collective_intelligence,
         focudata:College_of_Osteopathic_Medicine_of_the_Pacific,
         focudata:Common_logarithm,
@@ -3115,7 +2963,6 @@ ex:YunJin a focu:Student ;
         focudata:Precision_and_recall,
         focudata:Qi,
         focudata:Rare_species,
-        focudata:Reading,
         focudata:Real_number,
         focudata:Recommender_system,
         focudata:Retrotransposon,
@@ -3126,7 +2973,6 @@ ex:YunJin a focu:Student ;
         focudata:Software_engineering,
         focudata:Tfidf,
         focudata:The_Tempest,
-        focudata:Thin-film-transistor_liquid-crystal_display,
         focudata:Tree_structure,
         focudata:Trigonometric_functions,
         focudata:Unit_sphere,
@@ -3135,7 +2981,6 @@ ex:YunJin a focu:Student ;
         focudata:Vector_space,
         focudata:Vector_space_model,
         focudata:Web_search_engine,
-        focudata:Weighted_arithmetic_mean,
         focudata:Weighting,
         focudata:Wireless_access_point,
         focudata:World_Wide_Web,
@@ -3157,7 +3002,6 @@ ex:YunJin a focu:Student ;
         focudata:Chapter_VII_of_the_United_Nations_Charter,
         focudata:Chavacano,
         focudata:Cluster_analysis,
-        focudata:Coefficient,
         focudata:College_of_Osteopathic_Medicine_of_the_Pacific,
         focudata:Complicated_Avril_Lavigne_song,
         focudata:Computer_program,
@@ -3185,12 +3029,10 @@ ex:YunJin a focu:Student ;
         focudata:Essence,
         focudata:Euclidean_distance,
         focudata:Euclidean_vector,
-        focudata:Extrapolation,
         focudata:F1_hybrid,
         focudata:F1_score,
         focudata:Facebook,
         focudata:Feature_machine_learning,
-        focudata:Forecasting,
         focudata:Function_problem,
         focudata:General_officer,
         focudata:German_language,
@@ -3206,13 +3048,10 @@ ex:YunJin a focu:Student ;
         focudata:Johannes_Peter_Mller,
         focudata:Journalism,
         focudata:K-means_clustering,
-        focudata:K-nearest_neighbors_algorithm,
         focudata:Karyotype,
         focudata:King_Arthur,
-        focudata:License,
         focudata:Life_on_Mars_American_TV_series,
         focudata:Limit_of_a_sequence,
-        focudata:Look_American_magazine,
         focudata:Luanda,
         focudata:Machine_learning,
         focudata:Main_Page,
@@ -3220,7 +3059,6 @@ ex:YunJin a focu:Student ;
         focudata:Mathematical_model,
         focudata:Medicine,
         focudata:Metric_space,
-        focudata:Misfit_stream,
         focudata:Monty_Python,
         focudata:Motivation,
         focudata:Moustache,
@@ -3231,9 +3069,6 @@ ex:YunJin a focu:Student ;
         focudata:New_Brunswick,
         focudata:OReilly_Media,
         focudata:Outlier,
-        focudata:Overfitting,
-        focudata:Overtraining,
-        focudata:Oxygen_saturation,
         focudata:Paradise_Papers,
         focudata:Partition_of_India,
         focudata:Phylogenetic_tree,
@@ -3241,7 +3076,6 @@ ex:YunJin a focu:Student ;
         focudata:Qi,
         focudata:RC2_Corporation,
         focudata:RDF_Schema,
-        focudata:Reading,
         focudata:Regression_analysis,
         focudata:Reinforcement_learning,
         focudata:Rote_learning,
@@ -3249,7 +3083,6 @@ ex:YunJin a focu:Student ;
         focudata:Scikit-learn,
         focudata:Second_Epistle_of_John,
         focudata:Ship_class,
-        focudata:Shuffling,
         focudata:Socrates,
         focudata:Software_engineering,
         focudata:Sony_Entertainment_Television,
@@ -3262,7 +3095,6 @@ ex:YunJin a focu:Student ;
         focudata:Strong_Guy,
         focudata:Taxicab_geometry,
         focudata:Temperature,
-        focudata:The_Matrix,
         focudata:Thin-film-transistor_liquid-crystal_display,
         focudata:Time_complexity,
         focudata:Toilet_paper,
@@ -3292,7 +3124,6 @@ ex:YunJin a focu:Student ;
         focudata:Apple_Inc,
         focudata:Arity,
         focudata:Array_data_structure,
-        focudata:Artificial_Linguistic_Internet_Computer_Entity,
         focudata:Artificial_intelligence,
         focudata:Audi_Q3,
         focudata:Audi_Q5,
@@ -3327,7 +3158,6 @@ ex:YunJin a focu:Student ;
         focudata:Determiner_phrase,
         focudata:Deterministic_finite_automaton,
         focudata:Dimensionality_reduction,
-        focudata:Divergent_thinking,
         focudata:Document_retrieval,
         focudata:Dog,
         focudata:English_language,
@@ -3351,7 +3181,6 @@ ex:YunJin a focu:Student ;
         focudata:HTM_Personenvervoer,
         focudata:How_Long_Ace_song,
         focudata:Human_resources,
-        focudata:Hybrid_vehicle,
         focudata:Hyperlink,
         focudata:IBM,
         focudata:Idiom,
@@ -3372,13 +3201,11 @@ ex:YunJin a focu:Student ;
         focudata:Level_of_detail,
         focudata:Lexical_analysis,
         focudata:Li_unit,
-        focudata:License,
         focudata:Linked_data,
         focudata:Linux_kernel,
         focudata:Loyola_University_Maryland,
         focudata:Machine_learning,
         focudata:Main_Page,
-        focudata:Malaysia,
         focudata:Marketing,
         focudata:Max_Fleischer,
         focudata:Microsoft,
@@ -3399,17 +3226,13 @@ ex:YunJin a focu:Student ;
         focudata:Ontology,
         focudata:Ope,
         focudata:Open_standard,
-        focudata:Overfitting,
         focudata:POWER7,
-        focudata:Paper_clip,
         focudata:Pareto_efficiency,
-        focudata:Parsing,
         focudata:Part-of-speech_tagging,
         focudata:Part_of_speech,
         focudata:Pattern_matching,
         focudata:Peter_Norvig,
         focudata:Plant,
-        focudata:Predicate_grammar,
         focudata:Prentice_Hall,
         focudata:Prime_Video,
         focudata:ProQuest_Dialog,
@@ -3420,8 +3243,6 @@ ex:YunJin a focu:Student ;
         focudata:Question_answering,
         focudata:Question_mark,
         focudata:RDF_Schema,
-        focudata:Railways_Act_1921,
-        focudata:Reading,
         focudata:Red_Queen_hypothesis,
         focudata:Regular_expression,
         focudata:Remote_Operations_Service_Element_protocol,
@@ -3450,7 +3271,6 @@ ex:YunJin a focu:Student ;
         focudata:Stanford_University,
         focudata:Statistical_classification,
         focudata:Statistical_model,
-        focudata:Streaming_media,
         focudata:Stuart_J_Russell,
         focudata:Supervised_learning,
         focudata:Technetium,
@@ -3466,7 +3286,6 @@ ex:YunJin a focu:Student ;
         focudata:Twitter,
         focudata:UTF-8,
         focudata:Ulysses_S_Grant,
-        focudata:Unfriended,
         focudata:Use_case,
         focudata:Vector_graphics,
         focudata:Verb,
@@ -3475,8 +3294,6 @@ ex:YunJin a focu:Student ;
         focudata:Wikipedia,
         focudata:William_Hobson,
         focudata:Windows_Embedded_Compact,
-        focudata:Word_stem,
-        focudata:Workflow,
         focudata:World_War_II,
         focudata:World_Wide_Web,
         focudata:Your_Name,
@@ -3498,14 +3315,10 @@ ex:YunJin a focu:Student ;
         focudata:Apache_Lucene,
         focudata:Apple_Inc,
         focudata:Application_programming_interface,
-        focudata:Artificial_intelligence,
-        focudata:Aspergillus,
         focudata:Automation,
         focudata:BRENDA,
         focudata:Bit_error_rate,
         focudata:Black_cat,
-        focudata:Bootstrapping,
-        focudata:Bracketing,
         focudata:Braunschweig,
         focudata:British_English,
         focudata:Brown_Corpus,
@@ -3519,13 +3332,11 @@ ex:YunJin a focu:Student ;
         focudata:Cervical_vertebrae,
         focudata:Chapter_11_Title_11_United_States_Code,
         focudata:Chemical_affinity,
-        focudata:Chongqing,
         focudata:Cloud_computing,
         focudata:Cole_Howard,
         focudata:Cole_Porter,
         focudata:College_of_Osteopathic_Medicine_of_the_Pacific,
         focudata:Computer_science,
-        focudata:Conscription,
         focudata:Constituent_linguistics,
         focudata:Content_analysis,
         focudata:Coreference,
@@ -3540,7 +3351,6 @@ ex:YunJin a focu:Student ;
         focudata:Derivative,
         focudata:Determiner,
         focudata:Digitization,
-        focudata:Divergent_thinking,
         focudata:Eastern_Orthodox_Church,
         focudata:Easy_Commodores_song,
         focudata:Email,
@@ -3554,7 +3364,6 @@ ex:YunJin a focu:Student ;
         focudata:Feature_engineering,
         focudata:Felix_Klein,
         focudata:Finite-state_machine,
-        focudata:Fracture,
         focudata:Fusion_power,
         focudata:GNU_Lesser_General_Public_License,
         focudata:Gefitinib,
@@ -3573,7 +3382,6 @@ ex:YunJin a focu:Student ;
         focudata:HTML,
         focudata:Head_company,
         focudata:Headword,
-        focudata:Hybrid_vehicle,
         focudata:Hydrogen,
         focudata:IBM,
         focudata:Idiom,
@@ -3648,7 +3456,6 @@ ex:YunJin a focu:Student ;
         focudata:Protein,
         focudata:PubMed,
         focudata:PyTorch,
-        focudata:Reading,
         focudata:Regular_expression,
         focudata:Research_and_development,
         focudata:Retinoblastoma_protein,
@@ -3658,7 +3465,6 @@ ex:YunJin a focu:Student ;
         focudata:Sentences,
         focudata:Shape,
         focudata:Shareware,
-        focudata:Sheffield,
         focudata:Simpson_family,
         focudata:Software_architecture,
         focudata:Software_engineering,
@@ -3686,13 +3492,10 @@ ex:YunJin a focu:Student ;
         focudata:Walter_Scott,
         focudata:Whitespace_character,
         focudata:Wild_type,
-        focudata:William_Stubbs,
-        focudata:Word_stem,
-        focudata:XML .
+        focudata:William_Stubbs .
 
 <courses/COMP6741/OUT/course_outline_comp6741.pdf> a focu:courseOutline ;
-    focu:coversTopic focudata:Acquire,
-        focudata:Active_learning,
+    focu:coversTopic focudata:Active_learning,
         focudata:Agent-based_model,
         focudata:Algebra,
         focudata:Algorithm,
@@ -3706,8 +3509,6 @@ ex:YunJin a focu:Student ;
         focudata:Computer_science,
         focudata:Concordia_University,
         focudata:Conflict_resolution,
-        focudata:Curve,
-        focudata:Data_pre-processing,
         focudata:Death_of_a_Naturalist,
         focudata:Deep_learning,
         focudata:Emergency_medical_services,
@@ -3735,7 +3536,6 @@ ex:YunJin a focu:Student ;
         focudata:RDF_Schema,
         focudata:Recommender_system,
         focudata:Resource_Description_Framework,
-        focudata:Reverse-Flash,
         focudata:Rotary_International,
         focudata:SPARQL,
         focudata:Scikit-learn,
@@ -3747,8 +3547,7 @@ ex:YunJin a focu:Student ;
         focudata:Text_mining,
         focudata:To_be_announced,
         focudata:Uncertainty,
-        focudata:Web_Ontology_Language,
-        focudata:XML .
+        focudata:Web_Ontology_Language .
 
 <courses/COMP6741/WKS/WS01.pdf> a focu:Worksheet ;
     focu:coversTopic focudata:Active_learning,
@@ -3779,7 +3578,6 @@ ex:YunJin a focu:Student ;
         focudata:Resource_Description_Framework,
         focudata:SQL,
         focudata:Textbook,
-        focudata:The_Returned_French_TV_series,
         focudata:Uniform_Resource_Identifier,
         focudata:Wikidata .
 
@@ -3801,7 +3599,6 @@ ex:YunJin a focu:Student ;
         focudata:Notation3,
         focudata:Ontology_information_science,
         focudata:Operation_Brevity,
-        focudata:Prefix,
         focudata:Pseudocode,
         focudata:RDF_Schema,
         focudata:Resource_Description_Framework,
@@ -3819,18 +3616,14 @@ ex:YunJin a focu:Student ;
         focudata:Concordia_University,
         focudata:DBpedia,
         focudata:Dawson_College,
-        focudata:Dewan_Bahasa_dan_Pustaka,
         focudata:First-order_logic,
         focudata:Knowledge_Graph,
         focudata:Linked_data,
-        focudata:Look_American_magazine,
         focudata:Main_Page,
         focudata:Montreal,
         focudata:National_Union_of_Mineworkers_Great_Britain,
         focudata:Nile,
         focudata:Ontology,
-        focudata:Prefix,
-        focudata:Public_company,
         focudata:SPARQL,
         focudata:SQL,
         focudata:Select_SQL,
@@ -3856,26 +3649,20 @@ ex:YunJin a focu:Student ;
         focudata:Qi,
         focudata:Recommender_system,
         focudata:Romance_novel,
-        focudata:Target_Corporation,
         focudata:Tfidf,
-        focudata:Thin-film-transistor_liquid-crystal_display,
         focudata:Trigonometric_functions,
-        focudata:Unit_vector,
         focudata:Zombie .
 
 <courses/COMP6741/WKS/WS05.pdf> a focu:Worksheet ;
     focu:coversTopic focudata:Acorn_Eurocard_systems,
         focudata:Algorithm,
         focudata:Artificial_intelligence,
-        focudata:Cluster_analysis,
         focudata:Command_and_control,
         focudata:Computer_cluster,
         focudata:Formula_One,
         focudata:Function_problem,
         focudata:Fused_filament_fabrication,
-        focudata:K-nearest_neighbors_algorithm,
         focudata:Karyotype,
-        focudata:M4_computer_language,
         focudata:Machine_learning,
         focudata:Majority,
         focudata:Pi,
@@ -3897,13 +3684,10 @@ ex:YunJin a focu:Student ;
         focudata:DBpedia,
         focudata:Dimension,
         focudata:English_language,
-        focudata:Go_game,
         focudata:Hilton_Worldwide,
         focudata:Identifier,
-        focudata:K-nearest_neighbors_algorithm,
         focudata:Knowledge_Graph,
         focudata:Letter_case,
-        focudata:Look_American_magazine,
         focudata:Machine_learning,
         focudata:Main_Page,
         focudata:McGill_University,
@@ -3922,7 +3706,6 @@ ex:YunJin a focu:Student ;
         focudata:Shareware,
         focudata:Statistical_classification,
         focudata:Steve_Jobs,
-        focudata:Test_cricket,
         focudata:Tfidf,
         focudata:Thompson_River,
         focudata:Training_validation_and_test_sets,
@@ -3943,7 +3726,6 @@ ex:YunJin a focu:Student ;
         focudata:Information_extraction,
         focudata:Lexical_analysis,
         focudata:Library,
-        focudata:Look_American_magazine,
         focudata:Main_Page,
         focudata:Named-entity_recognition,
         focudata:Natural_language_processing,
@@ -3956,8 +3738,6 @@ ex:YunJin a focu:Student ;
         focudata:Part_of_speech,
         focudata:Pipeline_transport,
         focudata:Pythonidae,
-        focudata:Streaming_media,
-        focudata:Strike_action,
         focudata:Syntax,
         focudata:Text_mining .
 
@@ -15382,7 +15162,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Academy_Awards,
         focudata:Acorn_Eurocard_systems,
         focudata:Acoustics,
-        focudata:Acquire,
         focudata:Activation_function,
         focudata:Active_learning,
         focudata:Adenosine_A1_receptor,
@@ -15442,7 +15221,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Applications_architecture,
         focudata:Apricot,
         focudata:Arithmetic,
-        focudata:Arithmetic_underflow,
         focudata:Array_data_structure,
         focudata:Artificial_general_intelligence,
         focudata:Artificial_intelligence,
@@ -15472,7 +15250,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Bachelor_of_Arts,
         focudata:Backgammon,
         focudata:Backpropagation,
-        focudata:Backtracking,
         focudata:Banana,
         focudata:Barack_Obama,
         focudata:Base_pair,
@@ -15486,7 +15263,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Bayesian_inference,
         focudata:Be_Careful_Cardi_B_song,
         focudata:Beer,
-        focudata:Ben_Webster,
         focudata:Benchmarking,
         focudata:Bennet_family,
         focudata:Berlin,
@@ -15494,7 +15270,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Best-first_search,
         focudata:Beta-2_adrenergic_receptor,
         focudata:Bias,
-        focudata:Bias_of_an_estimator,
         focudata:Big_Bang,
         focudata:Big_Eyes,
         focudata:Bigram,
@@ -15564,7 +15339,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Chess,
         focudata:Chicago,
         focudata:Chicken,
-        focudata:Chief_Justice_of_Australia,
         focudata:Chinese_cuisine,
         focudata:Chinese_language,
         focudata:Choice_function,
@@ -15582,27 +15356,21 @@ focudata:COMP6721 a focu:Course ;
         focudata:Cluster_analysis,
         focudata:Clyde_Stubblefield,
         focudata:Coffee,
-        focudata:Cognitive_bias,
         focudata:Cognitive_psychology,
         focudata:Coin,
-        focudata:Coin_flipping,
         focudata:Cole_Howard,
         focudata:Colin_Chapman,
         focudata:College_of_Osteopathic_Medicine_of_the_Pacific,
         focudata:Comma,
         focudata:Comma-separated_values,
         focudata:Command_and_control,
-        focudata:Common_Lisp,
         focudata:Common_logarithm,
         focudata:Compact_disc,
-        focudata:Compact_space,
         focudata:Complete_game,
         focudata:Complicated_Avril_Lavigne_song,
         focudata:Composite_material,
         focudata:Computer,
-        focudata:Computer-assisted_telephone_interviewing,
         focudata:Computer_algebra,
-        focudata:Computer_animation,
         focudata:Computer_architecture,
         focudata:Computer_chess,
         focudata:Computer_cluster,
@@ -15618,13 +15386,11 @@ focudata:COMP6721 a focu:Course ;
         focudata:Connected_space,
         focudata:Connectionism,
         focudata:Consciousness,
-        focudata:Conscription,
         focudata:Constituent_linguistics,
         focudata:Content_word,
         focudata:Context-free_grammar,
         focudata:Context_awareness,
         focudata:Contingency_table,
-        focudata:Contract_killing,
         focudata:Convolution,
         focudata:Convolutional_neural_network,
         focudata:Coreference,
@@ -15638,7 +15404,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Crime,
         focudata:Croatian_National_Bank,
         focudata:Cross-validation_statistics,
-        focudata:Curve,
         focudata:Customer_support,
         focudata:Cyc,
         focudata:DBpedia,
@@ -15655,7 +15420,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Data_link_layer,
         focudata:Data_mining,
         focudata:Data_model,
-        focudata:Data_pre-processing,
         focudata:Data_set,
         focudata:Data_structure,
         focudata:Data_type,
@@ -15727,7 +15491,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Email,
         focudata:Email_filtering,
         focudata:Email_spam,
-        focudata:Embedding,
         focudata:Emergency_medical_services,
         focudata:Empty_set,
         focudata:English_language,
@@ -15753,11 +15516,9 @@ focudata:COMP6721 a focu:Course ;
         focudata:Exon,
         focudata:Expert_system,
         focudata:Extended_real_number_line,
-        focudata:Extrapolation,
         focudata:F1_hybrid,
         focudata:F1_score,
         focudata:FOAF_ontology,
-        focudata:Face,
         focudata:Facebook,
         focudata:Fair_cake-cutting,
         focudata:Fair_coin,
@@ -15776,7 +15537,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Fier,
         focudata:File_format,
         focudata:Filename_extension,
-        focudata:Filtration,
         focudata:Final_Score,
         focudata:Finance,
         focudata:Financial_institution,
@@ -15791,7 +15551,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Fluorine,
         focudata:Fly,
         focudata:Fog,
-        focudata:Foraging,
         focudata:Ford_Focus,
         focudata:Forillon_National_Park,
         focudata:Formal_grammar,
@@ -15835,7 +15594,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:GitHub,
         focudata:Glossary_of_graph_theory_terms,
         focudata:Gnutella2,
-        focudata:Go_game,
         focudata:Golf,
         focudata:Goods,
         focudata:Google,
@@ -15851,7 +15609,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Gp41,
         focudata:Gradient,
         focudata:Gradient_descent,
-        focudata:Gram,
         focudata:Grammar,
         focudata:Grammar_checker,
         focudata:Grand_Duchess_Olga_Nikolaevna_of_Russia,
@@ -15882,7 +15639,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Haruki_Murakami,
         focudata:Health_care,
         focudata:Heart,
-        focudata:Heart_sounds,
         focudata:Heat,
         focudata:Heidelberg,
         focudata:Helicopter,
@@ -15921,16 +15677,13 @@ focudata:COMP6721 a focu:Course ;
         focudata:ING_Group,
         focudata:ISO_216,
         focudata:ITER,
-        focudata:Ibuprofen,
         focudata:Ice,
         focudata:Identifier,
         focudata:Ilya_Kabakov,
         focudata:ImageNet,
         focudata:Image_retrieval,
-        focudata:Image_scanner,
         focudata:Immutable_object,
         focudata:Imperative_programming,
-        focudata:Impose_magazine,
         focudata:Inception,
         focudata:Independent_politician,
         focudata:Indonesia_Stock_Exchange,
@@ -15952,7 +15705,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Intel_Core,
         focudata:Intelligence,
         focudata:Intelligent_agent,
-        focudata:Interaction,
         focudata:Interleukin_10,
         focudata:Interleukin_2,
         focudata:International_Standard_Book_Number,
@@ -15973,7 +15725,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Iterative_deepening_depth-first_search,
         focudata:JSON-LD,
         focudata:Jack_Harkness,
-        focudata:James_Lighthill,
         focudata:James_Watson,
         focudata:Jan_Strnad,
         focudata:Jane_Beale,
@@ -15992,7 +15743,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:John_Major,
         focudata:John_Snow,
         focudata:John_V_Palaiologos,
-        focudata:Joint_Electronics_Type_Designation_System,
         focudata:Joint_probability_distribution,
         focudata:Jonathan_Schaeffer,
         focudata:Jonathan_and_Martha_Kent,
@@ -16023,7 +15773,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Kripke_semantics,
         focudata:Krypton,
         focudata:Kwekwe-Gokwe_Highway,
-        focudata:LNER_Class_P2,
         focudata:LR_parser,
         focudata:Lake,
         focudata:Language_model,
@@ -16048,7 +15797,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:LinkedIn,
         focudata:Linked_data,
         focudata:Linuxconfau,
-        focudata:Lisp_programming_language,
         focudata:List_of_The_Bold_and_the_Beautiful_secondary_characters,
         focudata:List_of_minor_DC_Comics_characters,
         focudata:Literal_mathematical_logic,
@@ -16064,7 +15812,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:London_Academy_of_Music_and_Dramatic_Art,
         focudata:London_Borough_of_Sutton,
         focudata:Long_and_short_scales,
-        focudata:Look_American_magazine,
         focudata:Los_Angeles,
         focudata:Loss_function,
         focudata:Lotus_Software,
@@ -16080,7 +15827,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Machine-readable_data,
         focudata:Machine_learning,
         focudata:Machine_translation,
-        focudata:Macroscopic_scale,
         focudata:Mad_scientist,
         focudata:Madrid,
         focudata:Magic_in_fiction,
@@ -16132,7 +15878,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Minnesota_Wild,
         focudata:Miroirs,
         focudata:Mirror_image,
-        focudata:Misfit_stream,
         focudata:Missing_data,
         focudata:Mitch_Kapor,
         focudata:Mitchell_family,
@@ -16205,7 +15950,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Noun_phrase,
         focudata:Nucleotide_excision_repair,
         focudata:Null_hypothesis,
-        focudata:Null_pointer,
         focudata:NumPy,
         focudata:Numeral_prefix,
         focudata:Numerical_digit,
@@ -16236,10 +15980,8 @@ focudata:COMP6721 a focu:Course ;
         focudata:Outlier,
         focudata:Outline_of_object_recognition,
         focudata:Overcoat,
-        focudata:Overfitting,
         focudata:Oxygen,
         focudata:P1_phage,
-        focudata:PDF,
         focudata:PHP,
         focudata:Pac-Man,
         focudata:Padding,
@@ -16287,7 +16029,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Pokmon,
         focudata:Polynomial,
         focudata:Polypropylene,
-        focudata:Pop_music,
         focudata:Postal_code,
         focudata:Potomac_River,
         focudata:PowerPC_Reference_Platform,
@@ -16295,13 +16036,10 @@ focudata:COMP6721 a focu:Course ;
         focudata:Pragmatics,
         focudata:Precision_and_recall,
         focudata:Precision_medicine,
-        focudata:Prefix,
         focudata:Preposition_and_postposition,
-        focudata:Preprocessor,
         focudata:Presidency_of_Barack_Obama,
         focudata:Prince_Iaukea,
         focudata:Princeton_University,
-        focudata:Printing,
         focudata:Prior_probability,
         focudata:Priority_queue,
         focudata:Prisoner,
@@ -16318,7 +16056,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Problem_solving,
         focudata:Professional_wrestling_double-team_maneuvers,
         focudata:Programming_language,
-        focudata:Prolog,
         focudata:Pronoun,
         focudata:Proprietary_software,
         focudata:Protein,
@@ -16330,7 +16067,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Public_Knowledge,
         focudata:Public_relations,
         focudata:Punctuation,
-        focudata:Puzzle,
         focudata:PyTorch,
         focudata:Pythonidae,
         focudata:Q-learning,
@@ -16350,7 +16086,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Random_variable,
         focudata:Rapid_transit,
         focudata:Ray_Kurzweil,
-        focudata:Reading,
         focudata:Real-time_bidding,
         focudata:Recommender_system,
         focudata:Rectifier_neural_networks,
@@ -16358,7 +16093,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Recursion,
         focudata:Red_Square,
         focudata:Reduced_instruction_set_computer,
-        focudata:Referee,
         focudata:Reflex,
         focudata:Regression_analysis,
         focudata:Regular_expression,
@@ -16368,7 +16102,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Rerun,
         focudata:Resource_Description_Framework,
         focudata:Restricted_Boltzmann_machine,
-        focudata:Reverse-Flash,
         focudata:Reversi,
         focudata:Rich_Hardbeck,
         focudata:Rigveda,
@@ -16378,8 +16111,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Rote_learning,
         focudata:Roulette,
         focudata:Royal_Horticultural_Society,
-        focudata:Rubidium,
-        focudata:Ruby,
         focudata:Rugby_union_positions,
         focudata:Rule-based_machine_translation,
         focudata:Rule-based_system,
@@ -16423,7 +16154,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Shogi,
         focudata:Short_film,
         focudata:Shortest_path_problem,
-        focudata:Shuffling,
         focudata:Sigmoid_function,
         focudata:Sign_function,
         focudata:Sildenafil,
@@ -16439,7 +16169,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Slovakia,
         focudata:Smallville,
         focudata:Smooth_Radio,
-        focudata:Smoothing,
         focudata:Smoothness,
         focudata:Snow,
         focudata:Social_class,
@@ -16450,7 +16179,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Software_architecture,
         focudata:Software_engineering,
         focudata:Software_testing,
-        focudata:SoltyRei,
         focudata:Soup,
         focudata:Source_code,
         focudata:South_Korea,
@@ -16480,7 +16208,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Statistical_hypothesis_testing,
         focudata:Statistical_model,
         focudata:Statistics,
-        focudata:Stay_Tuned_film,
         focudata:Stem_cell_factor,
         focudata:Step_function,
         focudata:Stephanie_Brown_character,
@@ -16491,7 +16218,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Stock_Exchange_of_Thailand,
         focudata:Stockfish,
         focudata:Stork,
-        focudata:Stove,
         focudata:Straitjacket_Fits,
         focudata:Stratego,
         focudata:String_instrument,
@@ -16500,7 +16226,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Striped_bass,
         focudata:Stu_Hart,
         focudata:Subroutine,
-        focudata:Subset,
         focudata:Substring,
         focudata:Subtraction,
         focudata:Sue_Dibny,
@@ -16511,7 +16236,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Supervised_learning,
         focudata:Support-vector_machine,
         focudata:Sushi,
-        focudata:Swimming,
         focudata:Symbolic_artificial_intelligence,
         focudata:Synapse,
         focudata:Syntax,
@@ -16520,11 +16244,9 @@ focudata:COMP6721 a focu:Course ;
         focudata:T1_space,
         focudata:Tandem,
         focudata:Tank_destroyer,
-        focudata:Target_Corporation,
         focudata:Taxicab_geometry,
         focudata:Taylorcraft_Auster,
         focudata:Temperature,
-        focudata:Tennis,
         focudata:Tensor,
         focudata:Tensor_processing_unit,
         focudata:Terry_Winograd,
@@ -16539,12 +16261,10 @@ focudata:COMP6721 a focu:Course ;
         focudata:The_Features,
         focudata:The_Goal_novel,
         focudata:The_Idea_wordless_novel,
-        focudata:The_Matrix,
         focudata:The_Members,
         focudata:The_Next_Web,
         focudata:The_Prisoner,
         focudata:The_Restaurant_Irish_TV_series,
-        focudata:The_Returned_French_TV_series,
         focudata:The_Weight,
         focudata:Theatrical_property,
         focudata:Theory_of_reasoned_action,
@@ -16553,7 +16273,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Thyroid_hormones,
         focudata:Tic-tac-toe,
         focudata:Time_complexity,
-        focudata:Times_Higher_Education,
         focudata:Tipi,
         focudata:To_be_announced,
         focudata:Toffee,
@@ -16587,7 +16306,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Type_I_and_type_II_errors,
         focudata:URL,
         focudata:USB,
-        focudata:Unicorn,
         focudata:Uniform_Resource_Identifier,
         focudata:Unit_testing,
         focudata:United_Kingdom,
@@ -16609,7 +16327,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:Verb_phrase,
         focudata:Very_Large_Scale_Integration,
         focudata:VicRail_N_type_carriage,
-        focudata:Vigilantism,
         focudata:Violin,
         focudata:Viral_envelope,
         focudata:Visual_Basic,
@@ -16626,7 +16343,6 @@ focudata:COMP6721 a focu:Course ;
         focudata:West_Digital_Television,
         focudata:Western_world,
         focudata:Wheel,
-        focudata:White_dwarf,
         focudata:Wikidata,
         focudata:Wikipedia,
         focudata:William_of_Ockham,
@@ -16647,9 +16363,8 @@ focudata:COMP6721 a focu:Course ;
         focudata:Zero-sum_game,
         focudata:Zero_of_a_function,
         focudata:Zion,
-        focudata:Zoophyte,
         focudata:Zucchini ;
-    focu:description "Laboratory: 24 hours total, project" .
+    focu:description "The course covers heuristic and adversarial searches for concrete applications. It then discusses automated reasoning, advanced knowledge representation and dealing with uncertainly for Artificial Intelligence applications. Finally, it introduces autoencoders, recurrent neural networks and sequence to sequence models. A project is required." .
 
 focudata:COMP6721-LAB-01 a focu:Lab ;
     focu:hasContent <courses/COMP6721/LAB/LE01.pdf> ;
@@ -16828,7 +16543,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Academy_Awards,
         focudata:Access_control,
         focudata:Acorn_Eurocard_systems,
-        focudata:Acquire,
         focudata:Active_learning,
         focudata:Activision,
         focudata:Adenosine_A1_receptor,
@@ -16867,12 +16581,9 @@ focudata:COMP6741 a focu:Course ;
         focudata:Application_programming_interface,
         focudata:Arity,
         focudata:Array_data_structure,
-        focudata:Artificial_Linguistic_Internet_Computer_Entity,
         focudata:Artificial_intelligence,
         focudata:Artificial_neural_network,
-        focudata:Askcom,
         focudata:Asperger_syndrome,
-        focudata:Aspergillus,
         focudata:Associated_Press,
         focudata:Association_for_Computing_Machinery,
         focudata:Audi_Q3,
@@ -16884,7 +16595,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Automation,
         focudata:Autonomous_robot,
         focudata:Available_seat_miles,
-        focudata:Axiom,
         focudata:Azure_heraldry,
         focudata:BASE_jumping,
         focudata:BIS_Records,
@@ -16912,11 +16622,8 @@ focudata:COMP6741 a focu:Course ;
         focudata:Blackboard,
         focudata:Blog,
         focudata:Book_of_Ruth,
-        focudata:Bookselling,
         focudata:Boolean_algebra,
-        focudata:Bootstrapping,
         focudata:Bracket,
-        focudata:Bracketing,
         focudata:Brain,
         focudata:Braunschweig,
         focudata:British_English,
@@ -16959,7 +16666,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Chavacano,
         focudata:Chemical_affinity,
         focudata:Chemistry,
-        focudata:Chongqing,
         focudata:Christianity,
         focudata:Christopher_Tolkien,
         focudata:City,
@@ -16968,7 +16674,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Cleopatra,
         focudata:Cloud_computing,
         focudata:Cluster_analysis,
-        focudata:Coefficient,
         focudata:Cole_Howard,
         focudata:Cole_Porter,
         focudata:Collective_intelligence,
@@ -16978,10 +16683,8 @@ focudata:COMP6741 a focu:Course ;
         focudata:Comma-separated_values,
         focudata:Command_and_control,
         focudata:Common_logarithm,
-        focudata:Communication_protocol,
         focudata:Community_management,
         focudata:Compact_disc,
-        focudata:Compact_space,
         focudata:Complement_system,
         focudata:Complicated_Avril_Lavigne_song,
         focudata:Compound_annual_growth_rate,
@@ -16994,7 +16697,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Conflict_resolution,
         focudata:Confusion_matrix,
         focudata:Connectionism,
-        focudata:Conscription,
         focudata:Constituent_linguistics,
         focudata:Content_analysis,
         focudata:Contingency_table,
@@ -17007,7 +16709,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Creative_Commons_license,
         focudata:Cross-validation_statistics,
         focudata:Currency,
-        focudata:Curve,
         focudata:Customer_service,
         focudata:Cyc,
         focudata:DBpedia,
@@ -17016,7 +16717,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Data_extraction,
         focudata:Data_integration,
         focudata:Data_model,
-        focudata:Data_pre-processing,
         focudata:Data_set,
         focudata:Data_structure,
         focudata:Data_type,
@@ -17040,7 +16740,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Determiner,
         focudata:Determiner_phrase,
         focudata:Deterministic_finite_automaton,
-        focudata:Dewan_Bahasa_dan_Pustaka,
         focudata:Dewey_Decimal_Classification,
         focudata:Digitization,
         focudata:Dimension,
@@ -17048,7 +16747,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Dimensionality_reduction,
         focudata:Discovery_Channel,
         focudata:Discrete_Fourier_transform,
-        focudata:Divergent_thinking,
         focudata:Document_retrieval,
         focudata:Dog,
         focudata:Dopamine_receptor_D1,
@@ -17081,7 +16779,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Evolution,
         focudata:Exon,
         focudata:Expert_system,
-        focudata:Extrapolation,
         focudata:F1_hybrid,
         focudata:F1_score,
         focudata:FAQ,
@@ -17105,10 +16802,8 @@ focudata:COMP6741 a focu:Course ;
         focudata:Fiscal_year,
         focudata:Flickr,
         focudata:Folksonomy,
-        focudata:Forecasting,
         focudata:Formal_language,
         focudata:Formula_One,
-        focudata:Fracture,
         focudata:Free_license,
         focudata:Freebase,
         focudata:French_language,
@@ -17144,7 +16839,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Glossary,
         focudata:Glossary_of_graph_theory_terms,
         focudata:Glutathione_S-transferase,
-        focudata:Go_game,
         focudata:Goal_orientation,
         focudata:Good,
         focudata:Google,
@@ -17181,7 +16875,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:How_Long_Ace_song,
         focudata:Human-readable_medium,
         focudata:Human_resources,
-        focudata:Hybrid_vehicle,
         focudata:Hydrogen,
         focudata:Hyperlink,
         focudata:Hypertext_Transfer_Protocol,
@@ -17204,7 +16897,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Information_security,
         focudata:Information_system,
         focudata:Inheritance,
-        focudata:Inheritance_object-oriented_programming,
         focudata:Insert_SQL,
         focudata:Inspector_general,
         focudata:Instruction_pipelining,
@@ -17239,7 +16931,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Judge,
         focudata:Julius_Caesar,
         focudata:K-means_clustering,
-        focudata:K-nearest_neighbors_algorithm,
         focudata:KU_Leuven,
         focudata:Kaiser_Permanente,
         focudata:Karyotype,
@@ -17275,7 +16966,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Li_unit,
         focudata:Library,
         focudata:Library_of_Congress,
-        focudata:License,
         focudata:Life_on_Mars_American_TV_series,
         focudata:Likert_scale,
         focudata:Limit_of_a_sequence,
@@ -17294,11 +16984,9 @@ focudata:COMP6741 a focu:Course ;
         focudata:Logical_disjunction,
         focudata:London,
         focudata:Long_and_short_scales,
-        focudata:Look_American_magazine,
         focudata:Loyola_University_Maryland,
         focudata:Lp_space,
         focudata:Luanda,
-        focudata:M4_computer_language,
         focudata:MAX_Light_Rail,
         focudata:MIT_License,
         focudata:MOS_Technology_TED,
@@ -17307,7 +16995,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Machine_learning,
         focudata:Main_Page,
         focudata:Majority,
-        focudata:Malaysia,
         focudata:Marketing,
         focudata:Mary_Shelley,
         focudata:Master_of_Laws,
@@ -17330,7 +17017,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Milan,
         focudata:Minnesota_Twins,
         focudata:Miroirs,
-        focudata:Misfit_stream,
         focudata:Mitsuki_Naruto,
         focudata:Modem,
         focudata:Modular_arithmetic,
@@ -17412,14 +17098,10 @@ focudata:COMP6741 a focu:Course ;
         focudata:Othello,
         focudata:Outfielder,
         focudata:Outlier,
-        focudata:Overfitting,
-        focudata:Overtraining,
         focudata:Ovid,
-        focudata:Oxygen_saturation,
         focudata:PDF,
         focudata:PHP,
         focudata:POWER7,
-        focudata:Paper_clip,
         focudata:Paradise_Papers,
         focudata:Parallel_computing,
         focudata:Paramara_dynasty,
@@ -17438,7 +17120,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Personalization,
         focudata:Peter_Norvig,
         focudata:Petroleum,
-        focudata:Phishing,
         focudata:Phonograph_record,
         focudata:Phrase,
         focudata:Phylogenetic_tree,
@@ -17459,8 +17140,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Power_Mac_G4,
         focudata:Precision_and_recall,
         focudata:Precision_medicine,
-        focudata:Predicate_grammar,
-        focudata:Prefix,
         focudata:Prentice_Hall,
         focudata:Preposition_and_postposition,
         focudata:Prime_Video,
@@ -17471,7 +17150,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Programming_language,
         focudata:Pronoun,
         focudata:Proof_of_concept,
-        focudata:Propaganda_Due,
         focudata:Proprietary_software,
         focudata:Protein,
         focudata:Provenance,
@@ -17480,7 +17158,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:PubMed,
         focudata:Public_Knowledge,
         focudata:Public_address_system,
-        focudata:Public_company,
         focudata:PyTorch,
         focudata:Pythonidae,
         focudata:Qi,
@@ -17496,9 +17173,7 @@ focudata:COMP6741 a focu:Course ;
         focudata:RDF_Schema,
         focudata:RDFa,
         focudata:Race_and_intelligence,
-        focudata:Railways_Act_1921,
         focudata:Rare_species,
-        focudata:Reading,
         focudata:Real_life,
         focudata:Real_number,
         focudata:Recommender_system,
@@ -17516,7 +17191,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Resource_Description_Framework,
         focudata:Retinoblastoma_protein,
         focudata:Retrotransposon,
-        focudata:Reverse-Flash,
         focudata:Reverse_transcriptase,
         focudata:Rich_Hardbeck,
         focudata:Richard_Wallace_director,
@@ -17533,7 +17207,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Rule_Interchange_Format,
         focudata:Runtime_system,
         focudata:SHRDLU,
-        focudata:SOAP,
         focudata:SPARQL,
         focudata:SQL,
         focudata:Saint_Sebastian,
@@ -17559,10 +17232,7 @@ focudata:COMP6741 a focu:Course ;
         focudata:Serialization,
         focudata:Shape,
         focudata:Shareware,
-        focudata:Sheffield,
         focudata:Ship_class,
-        focudata:Shuffling,
-        focudata:Signal_transduction,
         focudata:Silo,
         focudata:Silver,
         focudata:Similarity_measure,
@@ -17584,9 +17254,7 @@ focudata:COMP6741 a focu:Course ;
         focudata:Software,
         focudata:Software_agent,
         focudata:Software_architecture,
-        focudata:Software_as_a_service,
         focudata:Software_engineering,
-        focudata:Software_license,
         focudata:Software_requirements_specification,
         focudata:Sony,
         focudata:Sony_Entertainment_Television,
@@ -17609,8 +17277,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Stochastic_process,
         focudata:Stock,
         focudata:Straitjacket_Fits,
-        focudata:Streaming_media,
-        focudata:Strike_action,
         focudata:String_instrument,
         focudata:String_literal,
         focudata:String_theory,
@@ -17629,7 +17295,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Syntax,
         focudata:Tailor,
         focudata:Tandem,
-        focudata:Target_Corporation,
         focudata:Taxicab_geometry,
         focudata:Taylorcraft_Auster,
         focudata:Tbox,
@@ -17639,7 +17304,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:TensorFlow,
         focudata:Terabyte,
         focudata:Terry_Winograd,
-        focudata:Test_cricket,
         focudata:Text_mining,
         focudata:Textbook,
         focudata:Textus_Receptus,
@@ -17648,10 +17312,8 @@ focudata:COMP6741 a focu:Course ;
         focudata:The_Boston_Globe,
         focudata:The_Business_band,
         focudata:The_Goal_novel,
-        focudata:The_Matrix,
         focudata:The_Members,
         focudata:The_Next_Web,
-        focudata:The_Returned_French_TV_series,
         focudata:The_Scientist_magazine,
         focudata:The_Tempest,
         focudata:The_Walt_Disney_Company,
@@ -17688,21 +17350,18 @@ focudata:COMP6741 a focu:Course ;
         focudata:Ultimate_Marvel,
         focudata:Ulysses_S_Grant,
         focudata:Uncertainty,
-        focudata:Unfriended,
         focudata:UniProt,
         focudata:Unicode,
         focudata:Unicorn,
         focudata:Uniform_Resource_Identifier,
         focudata:Uniform_Resource_Name,
         focudata:Unit_sphere,
-        focudata:Unit_vector,
         focudata:United_Kingdom,
         focudata:United_States,
         focudata:United_States_Congress,
         focudata:United_States_dollar,
         focudata:Universe,
         focudata:Unsupervised_learning,
-        focudata:Urn,
         focudata:Use_case,
         focudata:User_agent,
         focudata:User_modeling,
@@ -17724,7 +17383,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Web_browser,
         focudata:Web_search_engine,
         focudata:Web_server,
-        focudata:Weighted_arithmetic_mean,
         focudata:Weighting,
         focudata:Well,
         focudata:West_Digital_Television,
@@ -17739,8 +17397,6 @@ focudata:COMP6741 a focu:Course ;
         focudata:Windows_Embedded_Compact,
         focudata:Wireless_access_point,
         focudata:WordPresscom,
-        focudata:Word_stem,
-        focudata:Workflow,
         focudata:World_Geodetic_System,
         focudata:World_War_II,
         focudata:World_Wide_Web,
@@ -17757,7 +17413,7 @@ focudata:COMP6741 a focu:Course ;
         focudata:Zo_people,
         focudata:Zombie,
         focudata:Zootopia ;
-    focu:description "Laboratory: 24 hours total, project" .
+    focu:description "Knowledge representation and reasoning. Uncertainty and conflict resolution. Design of intelligent systems. Grammar-based, rule-based, and blackboard architectures. A project is required." .
 
 focudata:COMP6741-LEC-01 a focu:Lecture ;
     focu:hasContent <courses/COMP6741/LEC/LS01.pdf>,
@@ -57756,6 +57412,10 @@ focudata:Alphabetical_order a focu:topic ;
     rdfs:label "Alphabetical_order" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Alphabetical_order> .
 
+focudata:Amazon_S3 a focu:topic ;
+    rdfs:label "Amazon_S3" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Amazon_S3> .
+
 focudata:Amazon_Web_Services a focu:topic ;
     rdfs:label "Amazon_Web_Services" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Amazon_Web_Services> .
@@ -57856,10 +57516,6 @@ focudata:Arity a focu:topic ;
     rdfs:label "Arity" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Arity> .
 
-focudata:Artificial_Linguistic_Internet_Computer_Entity a focu:topic ;
-    rdfs:label "Artificial_Linguistic_Internet_Computer_Entity" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Artificial_Linguistic_Internet_Computer_Entity> .
-
 focudata:Artificial_general_intelligence a focu:topic ;
     rdfs:label "Artificial_general_intelligence" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Artificial_general_intelligence> .
@@ -57867,10 +57523,6 @@ focudata:Artificial_general_intelligence a focu:topic ;
 focudata:Asian_Development_Bank a focu:topic ;
     rdfs:label "Asian_Development_Bank" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Asian_Development_Bank> .
-
-focudata:Aspergillus a focu:topic ;
-    rdfs:label "Aspergillus" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Aspergillus> .
 
 focudata:Assisted_reproductive_technology a focu:topic ;
     rdfs:label "Assisted_reproductive_technology" ;
@@ -57928,10 +57580,6 @@ focudata:Available_seat_miles a focu:topic ;
     rdfs:label "Available_seat_miles" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Available_seat_miles> .
 
-focudata:Axiom a focu:topic ;
-    rdfs:label "Axiom" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Axiom> .
-
 focudata:Axon a focu:topic ;
     rdfs:label "Axon" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Axon> .
@@ -57963,10 +57611,6 @@ focudata:Bachelor_of_Arts a focu:topic ;
 focudata:Backgammon a focu:topic ;
     rdfs:label "Backgammon" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Backgammon> .
-
-focudata:Backtracking a focu:topic ;
-    rdfs:label "Backtracking" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Backtracking> .
 
 focudata:Banana a focu:topic ;
     rdfs:label "Banana" ;
@@ -58019,10 +57663,6 @@ focudata:Be_Careful_Cardi_B_song a focu:topic ;
 focudata:Beer a focu:topic ;
     rdfs:label "Beer" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Beer> .
-
-focudata:Ben_Webster a focu:topic ;
-    rdfs:label "Ben_Webster" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Ben_Webster> .
 
 focudata:Benchmarking a focu:topic ;
     rdfs:label "Benchmarking" ;
@@ -58104,25 +57744,13 @@ focudata:Boeing_CH-47_Chinook a focu:topic ;
     rdfs:label "Boeing_CH-47_Chinook" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Boeing_CH-47_Chinook> .
 
-focudata:Bookselling a focu:topic ;
-    rdfs:label "Bookselling" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Bookselling> .
-
 focudata:Boolean_algebra a focu:topic ;
     rdfs:label "Boolean_algebra" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Boolean_algebra> .
 
-focudata:Bootstrapping a focu:topic ;
-    rdfs:label "Bootstrapping" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Bootstrapping> .
-
 focudata:Bottom-up_parsing a focu:topic ;
     rdfs:label "Bottom-up_parsing" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Bottom-up_parsing> .
-
-focudata:Bracketing a focu:topic ;
-    rdfs:label "Bracketing" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Bracketing> .
 
 focudata:Brad_Rutter a focu:topic ;
     rdfs:label "Brad_Rutter" ;
@@ -58340,10 +57968,6 @@ focudata:Chicken a focu:topic ;
     rdfs:label "Chicken" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Chicken> .
 
-focudata:Chief_Justice_of_Australia a focu:topic ;
-    rdfs:label "Chief_Justice_of_Australia" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Chief_Justice_of_Australia> .
-
 focudata:Chinese_cuisine a focu:topic ;
     rdfs:label "Chinese_cuisine" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Chinese_cuisine> .
@@ -58359,10 +57983,6 @@ focudata:Choice_function a focu:topic ;
 focudata:Cholera a focu:topic ;
     rdfs:label "Cholera" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Cholera> .
-
-focudata:Chongqing a focu:topic ;
-    rdfs:label "Chongqing" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Chongqing> .
 
 focudata:Christopher_Tolkien a focu:topic ;
     rdfs:label "Christopher_Tolkien" ;
@@ -58404,17 +58024,9 @@ focudata:Coffee a focu:topic ;
     rdfs:label "Coffee" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Coffee> .
 
-focudata:Cognitive_bias a focu:topic ;
-    rdfs:label "Cognitive_bias" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Cognitive_bias> .
-
 focudata:Cognitive_psychology a focu:topic ;
     rdfs:label "Cognitive_psychology" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Cognitive_psychology> .
-
-focudata:Coin_flipping a focu:topic ;
-    rdfs:label "Coin_flipping" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Coin_flipping> .
 
 focudata:Cole_Porter a focu:topic ;
     rdfs:label "Cole_Porter" ;
@@ -58440,14 +58052,6 @@ focudata:Comma a focu:topic ;
     rdfs:label "Comma" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Comma> .
 
-focudata:Common_Lisp a focu:topic ;
-    rdfs:label "Common_Lisp" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Common_Lisp> .
-
-focudata:Communication_protocol a focu:topic ;
-    rdfs:label "Communication_protocol" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Communication_protocol> .
-
 focudata:Community_management a focu:topic ;
     rdfs:label "Community_management" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Community_management> .
@@ -58464,17 +58068,9 @@ focudata:Composite_material a focu:topic ;
     rdfs:label "Composite_material" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Composite_material> .
 
-focudata:Computer-assisted_telephone_interviewing a focu:topic ;
-    rdfs:label "Computer-assisted_telephone_interviewing" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Computer-assisted_telephone_interviewing> .
-
 focudata:Computer_algebra a focu:topic ;
     rdfs:label "Computer_algebra" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Computer_algebra> .
-
-focudata:Computer_animation a focu:topic ;
-    rdfs:label "Computer_animation" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Computer_animation> .
 
 focudata:Computer_architecture a focu:topic ;
     rdfs:label "Computer_architecture" ;
@@ -58483,6 +58079,10 @@ focudata:Computer_architecture a focu:topic ;
 focudata:Computer_chess a focu:topic ;
     rdfs:label "Computer_chess" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Computer_chess> .
+
+focudata:Computer_mouse a focu:topic ;
+    rdfs:label "Computer_mouse" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Computer_mouse> .
 
 focudata:Conditional_independence a focu:topic ;
     rdfs:label "Conditional_independence" ;
@@ -58515,10 +58115,6 @@ focudata:Context_awareness a focu:topic ;
 focudata:Contract_bridge a focu:topic ;
     rdfs:label "Contract_bridge" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Contract_bridge> .
-
-focudata:Contract_killing a focu:topic ;
-    rdfs:label "Contract_killing" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Contract_killing> .
 
 focudata:Conviction a focu:topic ;
     rdfs:label "Conviction" ;
@@ -58616,6 +58212,10 @@ focudata:Day6 a focu:topic ;
     rdfs:label "Day6" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Day6> .
 
+focudata:Debugging a focu:topic ;
+    rdfs:label "Debugging" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Debugging> .
+
 focudata:Decimal a focu:topic ;
     rdfs:label "Decimal" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Decimal> .
@@ -58667,10 +58267,6 @@ focudata:Deterministic_finite_automaton a focu:topic ;
 focudata:Deuterium a focu:topic ;
     rdfs:label "Deuterium" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Deuterium> .
-
-focudata:Dewan_Bahasa_dan_Pustaka a focu:topic ;
-    rdfs:label "Dewan_Bahasa_dan_Pustaka" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Dewan_Bahasa_dan_Pustaka> .
 
 focudata:Dewey_Decimal_Classification a focu:topic ;
     rdfs:label "Dewey_Decimal_Classification" ;
@@ -58864,6 +58460,10 @@ focudata:Evolution a focu:topic ;
     rdfs:label "Evolution" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Evolution> .
 
+focudata:Exclusive_or a focu:topic ;
+    rdfs:label "Exclusive_or" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Exclusive_or> .
+
 focudata:Executive_officer a focu:topic ;
     rdfs:label "Executive_officer" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Executive_officer> .
@@ -58871,10 +58471,6 @@ focudata:Executive_officer a focu:topic ;
 focudata:FAQ a focu:topic ;
     rdfs:label "FAQ" ;
     rdfs:seeAlso <http://dbpedia.org/resource/FAQ> .
-
-focudata:Face a focu:topic ;
-    rdfs:label "Face" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Face> .
 
 focudata:Facebook_Messenger a focu:topic ;
     rdfs:label "Facebook_Messenger" ;
@@ -58956,6 +58552,10 @@ focudata:Filename_extension a focu:topic ;
     rdfs:label "Filename_extension" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Filename_extension> .
 
+focudata:Filtration a focu:topic ;
+    rdfs:label "Filtration" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Filtration> .
+
 focudata:Final_Score a focu:topic ;
     rdfs:label "Final_Score" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Final_Score> .
@@ -59012,17 +58612,9 @@ focudata:Folksonomy a focu:topic ;
     rdfs:label "Folksonomy" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Folksonomy> .
 
-focudata:Foraging a focu:topic ;
-    rdfs:label "Foraging" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Foraging> .
-
 focudata:Ford_Focus a focu:topic ;
     rdfs:label "Ford_Focus" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Ford_Focus> .
-
-focudata:Forecasting a focu:topic ;
-    rdfs:label "Forecasting" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Forecasting> .
 
 focudata:Forillon_National_Park a focu:topic ;
     rdfs:label "Forillon_National_Park" ;
@@ -59043,10 +58635,6 @@ focudata:Formula_One a focu:topic ;
 focudata:Fox a focu:topic ;
     rdfs:label "Fox" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Fox> .
-
-focudata:Fracture a focu:topic ;
-    rdfs:label "Fracture" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Fracture> .
 
 focudata:Fragment_identifier a focu:topic ;
     rdfs:label "Fragment_identifier" ;
@@ -59232,10 +58820,6 @@ focudata:Gp41 a focu:topic ;
     rdfs:label "Gp41" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Gp41> .
 
-focudata:Gram a focu:topic ;
-    rdfs:label "Gram" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Gram> .
-
 focudata:Grammar_checker a focu:topic ;
     rdfs:label "Grammar_checker" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Grammar_checker> .
@@ -59339,6 +58923,10 @@ focudata:Hamlet a focu:topic ;
 focudata:Hamming_distance a focu:topic ;
     rdfs:label "Hamming_distance" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Hamming_distance> .
+
+focudata:Handwriting a focu:topic ;
+    rdfs:label "Handwriting" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Handwriting> .
 
 focudata:Harmonic a focu:topic ;
     rdfs:label "Harmonic" ;
@@ -59476,10 +59064,6 @@ focudata:ITER a focu:topic ;
     rdfs:label "ITER" ;
     rdfs:seeAlso <http://dbpedia.org/resource/ITER> .
 
-focudata:Ibuprofen a focu:topic ;
-    rdfs:label "Ibuprofen" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Ibuprofen> .
-
 focudata:Ice a focu:topic ;
     rdfs:label "Ice" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Ice> .
@@ -59499,10 +59083,6 @@ focudata:Ilya_Kabakov a focu:topic ;
 focudata:Image_retrieval a focu:topic ;
     rdfs:label "Image_retrieval" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Image_retrieval> .
-
-focudata:Image_scanner a focu:topic ;
-    rdfs:label "Image_scanner" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Image_scanner> .
 
 focudata:Image_segmentation a focu:topic ;
     rdfs:label "Image_segmentation" ;
@@ -59560,6 +59140,10 @@ focudata:Inheritance a focu:topic ;
     rdfs:label "Inheritance" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Inheritance> .
 
+focudata:Inheritance_object-oriented_programming a focu:topic ;
+    rdfs:label "Inheritance_object-oriented_programming" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Inheritance_(object-oriented_programming)> .
+
 focudata:Innovation a focu:topic ;
     rdfs:label "Innovation" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Innovation> .
@@ -59599,10 +59183,6 @@ focudata:Intel_Core a focu:topic ;
 focudata:Intelligence a focu:topic ;
     rdfs:label "Intelligence" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Intelligence> .
-
-focudata:Interaction a focu:topic ;
-    rdfs:label "Interaction" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Interaction> .
 
 focudata:Interleukin_10 a focu:topic ;
     rdfs:label "Interleukin_10" ;
@@ -59647,10 +59227,6 @@ focudata:Italy a focu:topic ;
 focudata:Jack_Harkness a focu:topic ;
     rdfs:label "Jack_Harkness" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Jack_Harkness> .
-
-focudata:James_Lighthill a focu:topic ;
-    rdfs:label "James_Lighthill" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/James_Lighthill> .
 
 focudata:James_VI_and_I a focu:topic ;
     rdfs:label "James_VI_and_I" ;
@@ -59720,10 +59296,6 @@ focudata:John_V_Palaiologos a focu:topic ;
     rdfs:label "John_V_Palaiologos" ;
     rdfs:seeAlso <http://dbpedia.org/resource/John_V_Palaiologos> .
 
-focudata:Joint_Electronics_Type_Designation_System a focu:topic ;
-    rdfs:label "Joint_Electronics_Type_Designation_System" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Joint_Electronics_Type_Designation_System> .
-
 focudata:Jonathan_Schaeffer a focu:topic ;
     rdfs:label "Jonathan_Schaeffer" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Jonathan_Schaeffer> .
@@ -59751,6 +59323,10 @@ focudata:Junior_chess a focu:topic ;
 focudata:Juvenile_court a focu:topic ;
     rdfs:label "Juvenile_court" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Juvenile_court> .
+
+focudata:K-nearest_neighbors_algorithm a focu:topic ;
+    rdfs:label "K-nearest_neighbors_algorithm" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/K-nearest_neighbors_algorithm> .
 
 focudata:KU_Leuven a focu:topic ;
     rdfs:label "KU_Leuven" ;
@@ -59823,10 +59399,6 @@ focudata:Krypton a focu:topic ;
 focudata:Kwekwe-Gokwe_Highway a focu:topic ;
     rdfs:label "Kwekwe-Gokwe_Highway" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Kwekwe-Gokwe_Highway> .
-
-focudata:LNER_Class_P2 a focu:topic ;
-    rdfs:label "LNER_Class_P2" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/LNER_Class_P2> .
 
 focudata:LR_parser a focu:topic ;
     rdfs:label "LR_parser" ;
@@ -59916,10 +59488,6 @@ focudata:Lio a focu:topic ;
     rdfs:label "Lio" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Lio> .
 
-focudata:Lisp_programming_language a focu:topic ;
-    rdfs:label "Lisp_programming_language" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Lisp_(programming_language)> .
-
 focudata:List_of_The_Bold_and_the_Beautiful_secondary_characters a focu:topic ;
     rdfs:label "List_of_The_Bold_and_the_Beautiful_secondary_characters" ;
     rdfs:seeAlso <http://dbpedia.org/resource/List_of_The_Bold_and_the_Beautiful_secondary_characters> .
@@ -59968,10 +59536,6 @@ focudata:M4_autocannon a focu:topic ;
     rdfs:label "M4_autocannon" ;
     rdfs:seeAlso <http://dbpedia.org/resource/M4_autocannon> .
 
-focudata:M4_computer_language a focu:topic ;
-    rdfs:label "M4_computer_language" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/M4_(computer_language)> .
-
 focudata:MAPK1 a focu:topic ;
     rdfs:label "MAPK1" ;
     rdfs:seeAlso <http://dbpedia.org/resource/MAPK1> .
@@ -59992,10 +59556,6 @@ focudata:Macbeth a focu:topic ;
     rdfs:label "Macbeth" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Macbeth> .
 
-focudata:Macroscopic_scale a focu:topic ;
-    rdfs:label "Macroscopic_scale" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Macroscopic_scale> .
-
 focudata:Mad_scientist a focu:topic ;
     rdfs:label "Mad_scientist" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Mad_scientist> .
@@ -60007,10 +59567,6 @@ focudata:Madrid a focu:topic ;
 focudata:Magic_in_fiction a focu:topic ;
     rdfs:label "Magic_in_fiction" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Magic_in_fiction> .
-
-focudata:Malaysia a focu:topic ;
-    rdfs:label "Malaysia" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Malaysia> .
 
 focudata:Marion_Tinsley a focu:topic ;
     rdfs:label "Marion_Tinsley" ;
@@ -60404,10 +59960,6 @@ focudata:Null_hypothesis a focu:topic ;
     rdfs:label "Null_hypothesis" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Null_hypothesis> .
 
-focudata:Null_pointer a focu:topic ;
-    rdfs:label "Null_pointer" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Null_pointer> .
-
 focudata:Numerical_digit a focu:topic ;
     rdfs:label "Numerical_digit" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Numerical_digit> .
@@ -60492,6 +60044,10 @@ focudata:Operations_management a focu:topic ;
     rdfs:label "Operations_management" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Operations_management> .
 
+focudata:Optical_filter a focu:topic ;
+    rdfs:label "Optical_filter" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Optical_filter> .
+
 focudata:Orange_SA a focu:topic ;
     rdfs:label "Orange_SA" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Orange_S.A.> .
@@ -60512,21 +60068,17 @@ focudata:Overcoat a focu:topic ;
     rdfs:label "Overcoat" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Overcoat> .
 
-focudata:Overtraining a focu:topic ;
-    rdfs:label "Overtraining" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Overtraining> .
-
 focudata:Ovid a focu:topic ;
     rdfs:label "Ovid" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Ovid> .
 
-focudata:Oxygen_saturation a focu:topic ;
-    rdfs:label "Oxygen_saturation" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Oxygen_saturation> .
-
 focudata:P1_phage a focu:topic ;
     rdfs:label "P1_phage" ;
     rdfs:seeAlso <http://dbpedia.org/resource/P1_phage> .
+
+focudata:PDF a focu:topic ;
+    rdfs:label "PDF" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/PDF> .
 
 focudata:Pac-Man a focu:topic ;
     rdfs:label "Pac-Man" ;
@@ -60535,10 +60087,6 @@ focudata:Pac-Man a focu:topic ;
 focudata:Padding a focu:topic ;
     rdfs:label "Padding" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Padding> .
-
-focudata:Paper_clip a focu:topic ;
-    rdfs:label "Paper_clip" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Paper_clip> .
 
 focudata:Paradise_Papers a focu:topic ;
     rdfs:label "Paradise_Papers" ;
@@ -60616,10 +60164,6 @@ focudata:Petroleum a focu:topic ;
     rdfs:label "Petroleum" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Petroleum> .
 
-focudata:Phishing a focu:topic ;
-    rdfs:label "Phishing" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Phishing> .
-
 focudata:Phonograph a focu:topic ;
     rdfs:label "Phonograph" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Phonograph> .
@@ -60676,10 +60220,6 @@ focudata:Polynomial a focu:topic ;
     rdfs:label "Polynomial" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Polynomial> .
 
-focudata:Pop_music a focu:topic ;
-    rdfs:label "Pop_music" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Pop_music> .
-
 focudata:Power-on_self-test a focu:topic ;
     rdfs:label "Power-on_self-test" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Power-on_self-test> .
@@ -60703,10 +60243,6 @@ focudata:Powerslam a focu:topic ;
 focudata:Pragmatics a focu:topic ;
     rdfs:label "Pragmatics" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Pragmatics> .
-
-focudata:Predicate_grammar a focu:topic ;
-    rdfs:label "Predicate_grammar" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Predicate_(grammar)> .
 
 focudata:Prentice_Hall a focu:topic ;
     rdfs:label "Prentice_Hall" ;
@@ -60768,25 +60304,17 @@ focudata:Professional_wrestling_double-team_maneuvers a focu:topic ;
     rdfs:label "Professional_wrestling_double-team_maneuvers" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Professional_wrestling_double-team_maneuvers> .
 
-focudata:Prolog a focu:topic ;
-    rdfs:label "Prolog" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Prolog> .
-
 focudata:Proof_of_concept a focu:topic ;
     rdfs:label "Proof_of_concept" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Proof_of_concept> .
 
-focudata:Propaganda_Due a focu:topic ;
-    rdfs:label "Propaganda_Due" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Propaganda_Due> .
+focudata:Pruning a focu:topic ;
+    rdfs:label "Pruning" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Pruning> .
 
 focudata:Public_address_system a focu:topic ;
     rdfs:label "Public_address_system" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Public_address_system> .
-
-focudata:Public_company a focu:topic ;
-    rdfs:label "Public_company" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Public_company> .
 
 focudata:Public_relations a focu:topic ;
     rdfs:label "Public_relations" ;
@@ -60832,10 +60360,6 @@ focudata:Railroad_switch a focu:topic ;
     rdfs:label "Railroad_switch" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Railroad_switch> .
 
-focudata:Railways_Act_1921 a focu:topic ;
-    rdfs:label "Railways_Act_1921" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Railways_Act_1921> .
-
 focudata:Ralph_Nader a focu:topic ;
     rdfs:label "Ralph_Nader" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Ralph_Nader> .
@@ -60879,10 +60403,6 @@ focudata:Red_Square a focu:topic ;
 focudata:Reduced_instruction_set_computer a focu:topic ;
     rdfs:label "Reduced_instruction_set_computer" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Reduced_instruction_set_computer> .
-
-focudata:Referee a focu:topic ;
-    rdfs:label "Referee" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Referee> .
 
 focudata:Refinitiv a focu:topic ;
     rdfs:label "Refinitiv" ;
@@ -60992,14 +60512,6 @@ focudata:Royal_Horticultural_Society a focu:topic ;
     rdfs:label "Royal_Horticultural_Society" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Royal_Horticultural_Society> .
 
-focudata:Rubidium a focu:topic ;
-    rdfs:label "Rubidium" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Rubidium> .
-
-focudata:Ruby a focu:topic ;
-    rdfs:label "Ruby" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Ruby> .
-
 focudata:Rule-based_machine_translation a focu:topic ;
     rdfs:label "Rule-based_machine_translation" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Rule-based_machine_translation> .
@@ -61019,10 +60531,6 @@ focudata:Ruthless_Records a focu:topic ;
 focudata:SIGMOD a focu:topic ;
     rdfs:label "SIGMOD" ;
     rdfs:seeAlso <http://dbpedia.org/resource/SIGMOD> .
-
-focudata:SOAP a focu:topic ;
-    rdfs:label "SOAP" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/SOAP> .
 
 focudata:SP_500_Index a focu:topic ;
     rdfs:label "SP_500_Index" ;
@@ -61128,10 +60636,6 @@ focudata:Shortest_path_problem a focu:topic ;
     rdfs:label "Shortest_path_problem" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Shortest_path_problem> .
 
-focudata:Signal_transduction a focu:topic ;
-    rdfs:label "Signal_transduction" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Signal_transduction> .
-
 focudata:Sildenafil a focu:topic ;
     rdfs:label "Sildenafil" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Sildenafil> .
@@ -61196,14 +60700,6 @@ focudata:Social_media a focu:topic ;
     rdfs:label "Social_media" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Social_media> .
 
-focudata:Software_as_a_service a focu:topic ;
-    rdfs:label "Software_as_a_service" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Software_as_a_service> .
-
-focudata:Software_license a focu:topic ;
-    rdfs:label "Software_license" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Software_license> .
-
 focudata:Software_requirements_specification a focu:topic ;
     rdfs:label "Software_requirements_specification" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Software_requirements_specification> .
@@ -61211,10 +60707,6 @@ focudata:Software_requirements_specification a focu:topic ;
 focudata:Software_testing a focu:topic ;
     rdfs:label "Software_testing" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Software_testing> .
-
-focudata:SoltyRei a focu:topic ;
-    rdfs:label "SoltyRei" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/SoltyRei> .
 
 focudata:Sony a focu:topic ;
     rdfs:label "Sony" ;
@@ -61312,10 +60804,6 @@ focudata:Statistics a focu:topic ;
     rdfs:label "Statistics" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Statistics> .
 
-focudata:Stay_Tuned_film a focu:topic ;
-    rdfs:label "Stay_Tuned_film" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Stay_Tuned_(film)> .
-
 focudata:Stem_cell_factor a focu:topic ;
     rdfs:label "Stem_cell_factor" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Stem_cell_factor> .
@@ -61356,17 +60844,9 @@ focudata:Stork a focu:topic ;
     rdfs:label "Stork" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Stork> .
 
-focudata:Stove a focu:topic ;
-    rdfs:label "Stove" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Stove> .
-
 focudata:Stratego a focu:topic ;
     rdfs:label "Stratego" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Stratego> .
-
-focudata:Strike_action a focu:topic ;
-    rdfs:label "Strike_action" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Strike_action> .
 
 focudata:Striped_bass a focu:topic ;
     rdfs:label "Striped_bass" ;
@@ -61464,10 +60944,6 @@ focudata:Television a focu:topic ;
     rdfs:label "Television" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Television> .
 
-focudata:Tennis a focu:topic ;
-    rdfs:label "Tennis" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Tennis> .
-
 focudata:TensorFlow a focu:topic ;
     rdfs:label "TensorFlow" ;
     rdfs:seeAlso <http://dbpedia.org/resource/TensorFlow> .
@@ -61483,6 +60959,10 @@ focudata:Terabyte a focu:topic ;
 focudata:Tessellation a focu:topic ;
     rdfs:label "Tessellation" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Tessellation> .
+
+focudata:Test_cricket a focu:topic ;
+    rdfs:label "Test_cricket" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Test_cricket> .
 
 focudata:Tetris a focu:topic ;
     rdfs:label "Tetris" ;
@@ -61571,10 +61051,6 @@ focudata:Thyroid_hormones a focu:topic ;
 focudata:Tim_Berners-Lee a focu:topic ;
     rdfs:label "Tim_Berners-Lee" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Tim_Berners-Lee> .
-
-focudata:Times_Higher_Education a focu:topic ;
-    rdfs:label "Times_Higher_Education" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Times_Higher_Education> .
 
 focudata:Tipi a focu:topic ;
     rdfs:label "Tipi" ;
@@ -61692,10 +61168,6 @@ focudata:Uncertainty a focu:topic ;
     rdfs:label "Uncertainty" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Uncertainty> .
 
-focudata:Unfriended a focu:topic ;
-    rdfs:label "Unfriended" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Unfriended> .
-
 focudata:UniProt a focu:topic ;
     rdfs:label "UniProt" ;
     rdfs:seeAlso <http://dbpedia.org/resource/UniProt> .
@@ -61703,6 +61175,10 @@ focudata:UniProt a focu:topic ;
 focudata:Unicode a focu:topic ;
     rdfs:label "Unicode" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Unicode> .
+
+focudata:Unicorn a focu:topic ;
+    rdfs:label "Unicorn" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Unicorn> .
 
 focudata:Uniform_Resource_Name a focu:topic ;
     rdfs:label "Uniform_Resource_Name" ;
@@ -61715,10 +61191,6 @@ focudata:Unit_sphere a focu:topic ;
 focudata:Unit_testing a focu:topic ;
     rdfs:label "Unit_testing" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Unit_testing> .
-
-focudata:Unit_vector a focu:topic ;
-    rdfs:label "Unit_vector" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Unit_vector> .
 
 focudata:United_Nations a focu:topic ;
     rdfs:label "United_Nations" ;
@@ -61743,10 +61215,6 @@ focudata:Unix_time a focu:topic ;
 focudata:Upper_and_lower_bounds a focu:topic ;
     rdfs:label "Upper_and_lower_bounds" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Upper_and_lower_bounds> .
-
-focudata:Urn a focu:topic ;
-    rdfs:label "Urn" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Urn> .
 
 focudata:Use_case a focu:topic ;
     rdfs:label "Use_case" ;
@@ -61787,10 +61255,6 @@ focudata:Very_Large_Scale_Integration a focu:topic ;
 focudata:VicRail_N_type_carriage a focu:topic ;
     rdfs:label "VicRail_N_type_carriage" ;
     rdfs:seeAlso <http://dbpedia.org/resource/VicRail_N_type_carriage> .
-
-focudata:Vigilantism a focu:topic ;
-    rdfs:label "Vigilantism" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Vigilantism> .
 
 focudata:Violin a focu:topic ;
     rdfs:label "Violin" ;
@@ -61836,10 +61300,6 @@ focudata:Web_server a focu:topic ;
     rdfs:label "Web_server" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Web_server> .
 
-focudata:Weighted_arithmetic_mean a focu:topic ;
-    rdfs:label "Weighted_arithmetic_mean" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Weighted_arithmetic_mean> .
-
 focudata:Weighting a focu:topic ;
     rdfs:label "Weighting" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Weighting> .
@@ -61859,10 +61319,6 @@ focudata:Westworld a focu:topic ;
 focudata:Wheel a focu:topic ;
     rdfs:label "Wheel" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Wheel> .
-
-focudata:White_dwarf a focu:topic ;
-    rdfs:label "White_dwarf" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/White_dwarf> .
 
 focudata:Whitespace_character a focu:topic ;
     rdfs:label "Whitespace_character" ;
@@ -61903,10 +61359,6 @@ focudata:WordPresscom a focu:topic ;
 focudata:Word_order a focu:topic ;
     rdfs:label "Word_order" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Word_order> .
-
-focudata:Workflow a focu:topic ;
-    rdfs:label "Workflow" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Workflow> .
 
 focudata:World_Bank a focu:topic ;
     rdfs:label "World_Bank" ;
@@ -61956,10 +61408,6 @@ focudata:Zombie a focu:topic ;
     rdfs:label "Zombie" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Zombie> .
 
-focudata:Zoophyte a focu:topic ;
-    rdfs:label "Zoophyte" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Zoophyte> .
-
 focudata:Zootopia a focu:topic ;
     rdfs:label "Zootopia" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Zootopia> .
@@ -61996,10 +61444,6 @@ focudata:Alternating_current a focu:topic ;
     rdfs:label "Alternating_current" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Alternating_current> .
 
-focudata:Amazon_S3 a focu:topic ;
-    rdfs:label "Amazon_S3" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Amazon_S3> .
-
 focudata:Amplitude-shift_keying a focu:topic ;
     rdfs:label "Amplitude-shift_keying" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Amplitude-shift_keying> .
@@ -62016,13 +61460,9 @@ focudata:Apache_Lucene a focu:topic ;
     rdfs:label "Apache_Lucene" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Apache_Lucene> .
 
-focudata:Arithmetic_underflow a focu:topic ;
-    rdfs:label "Arithmetic_underflow" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Arithmetic_underflow> .
-
-focudata:Askcom a focu:topic ;
-    rdfs:label "Askcom" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Ask.com> .
+focudata:Autoencoder a focu:topic ;
+    rdfs:label "Autoencoder" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Autoencoder> .
 
 focudata:Basic_block a focu:topic ;
     rdfs:label "Basic_block" ;
@@ -62039,6 +61479,10 @@ focudata:Belarus a focu:topic ;
 focudata:Bertrand_Russell a focu:topic ;
     rdfs:label "Bertrand_Russell" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Bertrand_Russell> .
+
+focudata:Bias a focu:topic ;
+    rdfs:label "Bias" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Bias> .
 
 focudata:Binary_classification a focu:topic ;
     rdfs:label "Binary_classification" ;
@@ -62096,10 +61540,6 @@ focudata:Claude_Shannon a focu:topic ;
     rdfs:label "Claude_Shannon" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Claude_Shannon> .
 
-focudata:Coefficient a focu:topic ;
-    rdfs:label "Coefficient" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Coefficient> .
-
 focudata:Coin a focu:topic ;
     rdfs:label "Coin" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Coin> .
@@ -62107,14 +61547,6 @@ focudata:Coin a focu:topic ;
 focudata:Compound_annual_growth_rate a focu:topic ;
     rdfs:label "Compound_annual_growth_rate" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Compound_annual_growth_rate> .
-
-focudata:Computer_mouse a focu:topic ;
-    rdfs:label "Computer_mouse" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Computer_mouse> .
-
-focudata:Debugging a focu:topic ;
-    rdfs:label "Debugging" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Debugging> .
 
 focudata:Delta_State a focu:topic ;
     rdfs:label "Delta_State" ;
@@ -62128,17 +61560,9 @@ focudata:Discrete_Fourier_transform a focu:topic ;
     rdfs:label "Discrete_Fourier_transform" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Discrete_Fourier_transform> .
 
-focudata:Divergent_thinking a focu:topic ;
-    rdfs:label "Divergent_thinking" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Divergent_thinking> .
-
 focudata:Email_filtering a focu:topic ;
     rdfs:label "Email_filtering" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Email_filtering> .
-
-focudata:Embedding a focu:topic ;
-    rdfs:label "Embedding" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Embedding> .
 
 focudata:Empty_set a focu:topic ;
     rdfs:label "Empty_set" ;
@@ -62232,14 +61656,6 @@ focudata:Group_N a focu:topic ;
     rdfs:label "Group_N" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Group_N> .
 
-focudata:Handwriting a focu:topic ;
-    rdfs:label "Handwriting" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Handwriting> .
-
-focudata:Heart_sounds a focu:topic ;
-    rdfs:label "Heart_sounds" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Heart_sounds> .
-
 focudata:Heredity a focu:topic ;
     rdfs:label "Heredity" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Heredity> .
@@ -62268,10 +61684,6 @@ focudata:Human_resources a focu:topic ;
     rdfs:label "Human_resources" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Human_resources> .
 
-focudata:Hybrid_vehicle a focu:topic ;
-    rdfs:label "Hybrid_vehicle" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Hybrid_vehicle> .
-
 focudata:Hyperparameter a focu:topic ;
     rdfs:label "Hyperparameter" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Hyperparameter> .
@@ -62287,10 +61699,6 @@ focudata:Hypothesis a focu:topic ;
 focudata:ISO_216 a focu:topic ;
     rdfs:label "ISO_216" ;
     rdfs:seeAlso <http://dbpedia.org/resource/ISO_216> .
-
-focudata:Impose_magazine a focu:topic ;
-    rdfs:label "Impose_magazine" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Impose_(magazine)> .
 
 focudata:Internet_slang a focu:topic ;
     rdfs:label "Internet_slang" ;
@@ -62323,10 +61731,6 @@ focudata:Knowledge_worker a focu:topic ;
 focudata:Leverage_TV_series a focu:topic ;
     rdfs:label "Leverage_TV_series" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Leverage_(TV_series)> .
-
-focudata:License a focu:topic ;
-    rdfs:label "License" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/License> .
 
 focudata:Linear_separability a focu:topic ;
     rdfs:label "Linear_separability" ;
@@ -62424,10 +61828,6 @@ focudata:Optical_character_recognition a focu:topic ;
     rdfs:label "Optical_character_recognition" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Optical_character_recognition> .
 
-focudata:Optical_filter a focu:topic ;
-    rdfs:label "Optical_filter" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Optical_filter> .
-
 focudata:Organism a focu:topic ;
     rdfs:label "Organism" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Organism> .
@@ -62464,25 +61864,13 @@ focudata:Potomac_River a focu:topic ;
     rdfs:label "Potomac_River" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Potomac_River> .
 
-focudata:Preprocessor a focu:topic ;
-    rdfs:label "Preprocessor" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Preprocessor> .
-
 focudata:Prime_Video a focu:topic ;
     rdfs:label "Prime_Video" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Prime_Video> .
 
-focudata:Printing a focu:topic ;
-    rdfs:label "Printing" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Printing> .
-
 focudata:Priority_queue a focu:topic ;
     rdfs:label "Priority_queue" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Priority_queue> .
-
-focudata:Pruning a focu:topic ;
-    rdfs:label "Pruning" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Pruning> .
 
 focudata:RGB_color_model a focu:topic ;
     rdfs:label "RGB_color_model" ;
@@ -62520,10 +61908,6 @@ focudata:Shareware a focu:topic ;
     rdfs:label "Shareware" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Shareware> .
 
-focudata:Sheffield a focu:topic ;
-    rdfs:label "Sheffield" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Sheffield> .
-
 focudata:Sign_function a focu:topic ;
     rdfs:label "Sign_function" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Sign_function> .
@@ -62531,10 +61915,6 @@ focudata:Sign_function a focu:topic ;
 focudata:Singapore_dollar a focu:topic ;
     rdfs:label "Singapore_dollar" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Singapore_dollar> .
-
-focudata:Smoothing a focu:topic ;
-    rdfs:label "Smoothing" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Smoothing> .
 
 focudata:Smoothness a focu:topic ;
     rdfs:label "Smoothness" ;
@@ -62559,18 +61939,6 @@ focudata:Steve_Jobs a focu:topic ;
 focudata:Stochastic a focu:topic ;
     rdfs:label "Stochastic" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Stochastic> .
-
-focudata:Streaming_media a focu:topic ;
-    rdfs:label "Streaming_media" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Streaming_media> .
-
-focudata:Subset a focu:topic ;
-    rdfs:label "Subset" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Subset> .
-
-focudata:Swimming a focu:topic ;
-    rdfs:label "Swimming" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Swimming> .
 
 focudata:Tensor a focu:topic ;
     rdfs:label "Tensor" ;
@@ -62628,10 +61996,6 @@ focudata:Word_embedding a focu:topic ;
     rdfs:label "Word_embedding" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Word_embedding> .
 
-focudata:Word_stem a focu:topic ;
-    rdfs:label "Word_stem" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Word_stem> .
-
 focudata:Yann_LeCun a focu:topic ;
     rdfs:label "Yann_LeCun" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Yann_LeCun> .
@@ -62644,10 +62008,6 @@ focudata:Academy_Awards a focu:topic ;
     rdfs:label "Academy_Awards" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Academy_Awards> .
 
-focudata:Acquire a focu:topic ;
-    rdfs:label "Acquire" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Acquire> .
-
 focudata:Adenosine_A1_receptor a focu:topic ;
     rdfs:label "Adenosine_A1_receptor" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Adenosine_A1_receptor> .
@@ -62659,6 +62019,10 @@ focudata:Adhesive a focu:topic ;
 focudata:Algebra a focu:topic ;
     rdfs:label "Algebra" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Algebra> .
+
+focudata:Alice_and_Bob a focu:topic ;
+    rdfs:label "Alice_and_Bob" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Alice_and_Bob> .
 
 focudata:AlphaGo a focu:topic ;
     rdfs:label "AlphaGo" ;
@@ -62679,10 +62043,6 @@ focudata:Asperger_syndrome a focu:topic ;
 focudata:Association_for_Computing_Machinery a focu:topic ;
     rdfs:label "Association_for_Computing_Machinery" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Association_for_Computing_Machinery> .
-
-focudata:Autoencoder a focu:topic ;
-    rdfs:label "Autoencoder" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Autoencoder> .
 
 focudata:Automatic_summarization a focu:topic ;
     rdfs:label "Automatic_summarization" ;
@@ -62756,13 +62116,13 @@ focudata:Cloud_computing a focu:topic ;
     rdfs:label "Cloud_computing" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Cloud_computing> .
 
+focudata:Cluster_analysis a focu:topic ;
+    rdfs:label "Cluster_analysis" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Cluster_analysis> .
+
 focudata:Comma-separated_values a focu:topic ;
     rdfs:label "Comma-separated_values" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Comma-separated_values> .
-
-focudata:Compact_space a focu:topic ;
-    rdfs:label "Compact_space" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Compact_space> .
 
 focudata:Complicated_Avril_Lavigne_song a focu:topic ;
     rdfs:label "Complicated_Avril_Lavigne_song" ;
@@ -62808,10 +62168,6 @@ focudata:Count a focu:topic ;
     rdfs:label "Count" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Count> .
 
-focudata:Curve a focu:topic ;
-    rdfs:label "Curve" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Curve> .
-
 focudata:Cyc a focu:topic ;
     rdfs:label "Cyc" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Cyc> .
@@ -62819,10 +62175,6 @@ focudata:Cyc a focu:topic ;
 focudata:Data_mining a focu:topic ;
     rdfs:label "Data_mining" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Data_mining> .
-
-focudata:Data_pre-processing a focu:topic ;
-    rdfs:label "Data_pre-processing" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Data_pre-processing> .
 
 focudata:Data_visualization a focu:topic ;
     rdfs:label "Data_visualization" ;
@@ -62904,10 +62256,6 @@ focudata:Exon a focu:topic ;
     rdfs:label "Exon" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Exon> .
 
-focudata:Extrapolation a focu:topic ;
-    rdfs:label "Extrapolation" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Extrapolation> .
-
 focudata:F1_hybrid a focu:topic ;
     rdfs:label "F1_hybrid" ;
     rdfs:seeAlso <http://dbpedia.org/resource/F1_hybrid> .
@@ -62923,10 +62271,6 @@ focudata:Feature_engineering a focu:topic ;
 focudata:File_format a focu:topic ;
     rdfs:label "File_format" ;
     rdfs:seeAlso <http://dbpedia.org/resource/File_format> .
-
-focudata:Filtration a focu:topic ;
-    rdfs:label "Filtration" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Filtration> .
 
 focudata:Fraud a focu:topic ;
     rdfs:label "Fraud" ;
@@ -63007,10 +62351,6 @@ focudata:Infinity a focu:topic ;
 focudata:Information_visualization a focu:topic ;
     rdfs:label "Information_visualization" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Information_visualization> .
-
-focudata:Inheritance_object-oriented_programming a focu:topic ;
-    rdfs:label "Inheritance_object-oriented_programming" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Inheritance_(object-oriented_programming)> .
 
 focudata:Intelligent_agent a focu:topic ;
     rdfs:label "Intelligent_agent" ;
@@ -63111,10 +62451,6 @@ focudata:Minimax_TV_channel a focu:topic ;
 focudata:Minnesota_Wild a focu:topic ;
     rdfs:label "Minnesota_Wild" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Minnesota_Wild> .
-
-focudata:Misfit_stream a focu:topic ;
-    rdfs:label "Misfit_stream" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Misfit_stream> .
 
 focudata:Monotonic_function a focu:topic ;
     rdfs:label "Monotonic_function" ;
@@ -63288,10 +62624,6 @@ focudata:PubMed a focu:topic ;
     rdfs:label "PubMed" ;
     rdfs:seeAlso <http://dbpedia.org/resource/PubMed> .
 
-focudata:Puzzle a focu:topic ;
-    rdfs:label "Puzzle" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Puzzle> .
-
 focudata:Question_mark a focu:topic ;
     rdfs:label "Question_mark" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Question_mark> .
@@ -63299,10 +62631,6 @@ focudata:Question_mark a focu:topic ;
 focudata:RC2_Corporation a focu:topic ;
     rdfs:label "RC2_Corporation" ;
     rdfs:seeAlso <http://dbpedia.org/resource/RC2_Corporation> .
-
-focudata:Reverse-Flash a focu:topic ;
-    rdfs:label "Reverse-Flash" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Reverse-Flash> .
 
 focudata:Rich_Hardbeck a focu:topic ;
     rdfs:label "Rich_Hardbeck" ;
@@ -63392,6 +62720,10 @@ focudata:String_literal a focu:topic ;
     rdfs:label "String_literal" ;
     rdfs:seeAlso <http://dbpedia.org/resource/String_literal> .
 
+focudata:Substring a focu:topic ;
+    rdfs:label "Substring" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Substring> .
+
 focudata:Superuser a focu:topic ;
     rdfs:label "Superuser" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Superuser> .
@@ -63424,10 +62756,6 @@ focudata:The_Next_Web a focu:topic ;
     rdfs:label "The_Next_Web" ;
     rdfs:seeAlso <http://dbpedia.org/resource/The_Next_Web> .
 
-focudata:The_Returned_French_TV_series a focu:topic ;
-    rdfs:label "The_Returned_French_TV_series" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/The_Returned_(French_TV_series)> .
-
 focudata:Tic-tac-toe a focu:topic ;
     rdfs:label "Tic-tac-toe" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Tic-tac-toe> .
@@ -63459,10 +62787,6 @@ focudata:Triplestore a focu:topic ;
 focudata:Type_I_and_type_II_errors a focu:topic ;
     rdfs:label "Type_I_and_type_II_errors" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Type_I_and_type_II_errors> .
-
-focudata:Unicorn a focu:topic ;
-    rdfs:label "Unicorn" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Unicorn> .
 
 focudata:United_States_dollar a focu:topic ;
     rdfs:label "United_States_dollar" ;
@@ -63548,14 +62872,6 @@ focudata:Basketball_Super_League a focu:topic ;
     rdfs:label "Basketball_Super_League" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Basketball_Super_League> .
 
-focudata:Bias a focu:topic ;
-    rdfs:label "Bias" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Bias> .
-
-focudata:Bias_of_an_estimator a focu:topic ;
-    rdfs:label "Bias_of_an_estimator" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Bias_of_an_estimator> .
-
 focudata:Binary_logarithm a focu:topic ;
     rdfs:label "Binary_logarithm" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Binary_logarithm> .
@@ -63608,10 +62924,6 @@ focudata:Computer_vision a focu:topic ;
     rdfs:label "Computer_vision" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Computer_vision> .
 
-focudata:Conscription a focu:topic ;
-    rdfs:label "Conscription" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Conscription> .
-
 focudata:Contingency_table a focu:topic ;
     rdfs:label "Contingency_table" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Contingency_table> .
@@ -63652,10 +62964,6 @@ focudata:Email_spam a focu:topic ;
     rdfs:label "Email_spam" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Email_spam> .
 
-focudata:Exclusive_or a focu:topic ;
-    rdfs:label "Exclusive_or" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Exclusive_or> .
-
 focudata:Expert_system a focu:topic ;
     rdfs:label "Expert_system" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Expert_system> .
@@ -63675,10 +62983,6 @@ focudata:GitHub a focu:topic ;
 focudata:Glossary_of_graph_theory_terms a focu:topic ;
     rdfs:label "Glossary_of_graph_theory_terms" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Glossary_of_graph_theory_terms> .
-
-focudata:Go_game a focu:topic ;
-    rdfs:label "Go_game" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Go_(game)> .
 
 focudata:Gospel_of_Luke a focu:topic ;
     rdfs:label "Gospel_of_Luke" ;
@@ -63776,10 +63080,6 @@ focudata:NumPy a focu:topic ;
     rdfs:label "NumPy" ;
     rdfs:seeAlso <http://dbpedia.org/resource/NumPy> .
 
-focudata:PDF a focu:topic ;
-    rdfs:label "PDF" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/PDF> .
-
 focudata:Perception a focu:topic ;
     rdfs:label "Perception" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Perception> .
@@ -63827,10 +63127,6 @@ focudata:Rule-based_system a focu:topic ;
 focudata:Serialization a focu:topic ;
     rdfs:label "Serialization" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Serialization> .
-
-focudata:Shuffling a focu:topic ;
-    rdfs:label "Shuffling" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Shuffling> .
 
 focudata:Simulation a focu:topic ;
     rdfs:label "Simulation" ;
@@ -63923,10 +63219,6 @@ focudata:Acorn_Eurocard_systems a focu:topic ;
 focudata:Active_learning a focu:topic ;
     rdfs:label "Active_learning" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Active_learning> .
-
-focudata:Alice_and_Bob a focu:topic ;
-    rdfs:label "Alice_and_Bob" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Alice_and_Bob> .
 
 focudata:Amateur_radio a focu:topic ;
     rdfs:label "Amateur_radio" ;
@@ -64024,13 +63316,13 @@ focudata:Google_Search a focu:topic ;
     rdfs:label "Google_Search" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Google_Search> .
 
+focudata:Inference a focu:topic ;
+    rdfs:label "Inference" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Inference> .
+
 focudata:Information_system a focu:topic ;
     rdfs:label "Information_system" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Information_system> .
-
-focudata:K-nearest_neighbors_algorithm a focu:topic ;
-    rdfs:label "K-nearest_neighbors_algorithm" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/K-nearest_neighbors_algorithm> .
 
 focudata:Karyotype a focu:topic ;
     rdfs:label "Karyotype" ;
@@ -64080,6 +63372,10 @@ focudata:Normalnull a focu:topic ;
     rdfs:label "Normalnull" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Normalnull> .
 
+focudata:Notation3 a focu:topic ;
+    rdfs:label "Notation3" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Notation3> .
+
 focudata:Noun a focu:topic ;
     rdfs:label "Noun" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Noun> .
@@ -64095,6 +63391,10 @@ focudata:OpenAI a focu:topic ;
 focudata:Parse_tree a focu:topic ;
     rdfs:label "Parse_tree" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Parse_tree> .
+
+focudata:Parsing a focu:topic ;
+    rdfs:label "Parsing" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Parsing> .
 
 focudata:Part-of-speech_tagging a focu:topic ;
     rdfs:label "Part-of-speech_tagging" ;
@@ -64152,10 +63452,6 @@ focudata:Stanford_University a focu:topic ;
     rdfs:label "Stanford_University" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Stanford_University> .
 
-focudata:Substring a focu:topic ;
-    rdfs:label "Substring" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Substring> .
-
 focudata:Syntax a focu:topic ;
     rdfs:label "Syntax" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Syntax> .
@@ -64164,13 +63460,13 @@ focudata:Terry_Winograd a focu:topic ;
     rdfs:label "Terry_Winograd" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Terry_Winograd> .
 
-focudata:Test_cricket a focu:topic ;
-    rdfs:label "Test_cricket" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Test_cricket> .
-
 focudata:The_Goal_novel a focu:topic ;
     rdfs:label "The_Goal_novel" ;
     rdfs:seeAlso <http://dbpedia.org/resource/The_Goal_(novel)> .
+
+focudata:Thin-film-transistor_liquid-crystal_display a focu:topic ;
+    rdfs:label "Thin-film-transistor_liquid-crystal_display" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/Thin-film-transistor_liquid-crystal_display> .
 
 focudata:URL a focu:topic ;
     rdfs:label "URL" ;
@@ -64256,10 +63552,6 @@ focudata:Identifier a focu:topic ;
     rdfs:label "Identifier" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Identifier> .
 
-focudata:Inference a focu:topic ;
-    rdfs:label "Inference" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Inference> .
-
 focudata:Information_extraction a focu:topic ;
     rdfs:label "Information_extraction" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Information_extraction> .
@@ -64316,10 +63608,6 @@ focudata:Named-entity_recognition a focu:topic ;
     rdfs:label "Named-entity_recognition" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Named-entity_recognition> .
 
-focudata:Notation3 a focu:topic ;
-    rdfs:label "Notation3" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Notation3> .
-
 focudata:Ontology a focu:topic ;
     rdfs:label "Ontology" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Ontology> .
@@ -64327,10 +63615,6 @@ focudata:Ontology a focu:topic ;
 focudata:Open_standard a focu:topic ;
     rdfs:label "Open_standard" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Open_standard> .
-
-focudata:Overfitting a focu:topic ;
-    rdfs:label "Overfitting" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Overfitting> .
 
 focudata:Pi a focu:topic ;
     rdfs:label "Pi" ;
@@ -64360,13 +63644,13 @@ focudata:Speech_recognition a focu:topic ;
     rdfs:label "Speech_recognition" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Speech_recognition> .
 
-focudata:The_Matrix a focu:topic ;
-    rdfs:label "The_Matrix" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/The_Matrix> .
-
 focudata:Turkey a focu:topic ;
     rdfs:label "Turkey" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Turkey> .
+
+focudata:XML a focu:topic ;
+    rdfs:label "XML" ;
+    rdfs:seeAlso <http://dbpedia.org/resource/XML> .
 
 focudata:2 a focu:topic ;
     rdfs:label "2" ;
@@ -64440,10 +63724,6 @@ focudata:Perceptron a focu:topic ;
     rdfs:label "Perceptron" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Perceptron> .
 
-focudata:Prefix a focu:topic ;
-    rdfs:label "Prefix" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Prefix> .
-
 focudata:Recommender_system a focu:topic ;
     rdfs:label "Recommender_system" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Recommender_system> .
@@ -64460,14 +63740,6 @@ focudata:Supervised_learning a focu:topic ;
     rdfs:label "Supervised_learning" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Supervised_learning> .
 
-focudata:Target_Corporation a focu:topic ;
-    rdfs:label "Target_Corporation" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Target_Corporation> .
-
-focudata:Thin-film-transistor_liquid-crystal_display a focu:topic ;
-    rdfs:label "Thin-film-transistor_liquid-crystal_display" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Thin-film-transistor_liquid-crystal_display> .
-
 focudata:United_Kingdom a focu:topic ;
     rdfs:label "United_Kingdom" ;
     rdfs:seeAlso <http://dbpedia.org/resource/United_Kingdom> .
@@ -64483,10 +63755,6 @@ focudata:World_Wide_Web_Consortium a focu:topic ;
 focudata:Canada a focu:topic ;
     rdfs:label "Canada" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Canada> .
-
-focudata:Cluster_analysis a focu:topic ;
-    rdfs:label "Cluster_analysis" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Cluster_analysis> .
 
 focudata:Data_model a focu:topic ;
     rdfs:label "Data_model" ;
@@ -64516,10 +63784,6 @@ focudata:Library a focu:topic ;
     rdfs:label "Library" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Library> .
 
-focudata:Look_American_magazine a focu:topic ;
-    rdfs:label "Look_American_magazine" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Look_(American_magazine)> .
-
 focudata:N-Triples a focu:topic ;
     rdfs:label "N-Triples" ;
     rdfs:seeAlso <http://dbpedia.org/resource/N-Triples> .
@@ -64527,10 +63791,6 @@ focudata:N-Triples a focu:topic ;
 focudata:Noun_phrase a focu:topic ;
     rdfs:label "Noun_phrase" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Noun_phrase> .
-
-focudata:Parsing a focu:topic ;
-    rdfs:label "Parsing" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Parsing> .
 
 focudata:Part_of_speech a focu:topic ;
     rdfs:label "Part_of_speech" ;
@@ -64604,10 +63864,6 @@ focudata:Wikipedia a focu:topic ;
     rdfs:label "Wikipedia" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Wikipedia> .
 
-focudata:XML a focu:topic ;
-    rdfs:label "XML" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/XML> .
-
 focudata:Human-readable_medium a focu:topic ;
     rdfs:label "Human-readable_medium" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Human-readable_medium> .
@@ -64643,10 +63899,6 @@ focudata:Natural_language a focu:topic ;
 focudata:Probability a focu:topic ;
     rdfs:label "Probability" ;
     rdfs:seeAlso <http://dbpedia.org/resource/Probability> .
-
-focudata:Reading a focu:topic ;
-    rdfs:label "Reading" ;
-    rdfs:seeAlso <http://dbpedia.org/resource/Reading> .
 
 focudata:Software_engineering a focu:topic ;
     rdfs:label "Software_engineering" ;

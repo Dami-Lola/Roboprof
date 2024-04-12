@@ -1,22 +1,103 @@
 This will contain the sample questions to ask the chatbot concerning each query, for easy of testing and demo
+1)
+Can you list all the courses available?
+I want to see all the courses offered.
+What are the available courses?
 
-    - For [MBA644](course), what additional resources are available?
-    - Additional links to [MBA644](course)?
-    - For [BTM633](course), what additional resources are available?
-    - Additional links to [BTM633](course)?
-    - For [CHST605](course), what additional resources are available?
-    - Additional links to [CHST605](course)?
-    - For [POLI693](course), what additional resources are available?
-    - Additional links to [POLI693](course)?
-    - For [BLDG390](course), what additional resources are available?
-    - Additional links to [BLDG390](course)?
+2)
+Which courses covers FOAF_ontology?
+What course covers Bayes_classifier?
+What course teaches K-means_clustering
 
+3)
+Which topics are covered in COMP 6741 for lecture 3?
+Which topics are covered in the course COMP 6721 in the lecture 9?
+What topics are covered in COMP 6721 in lecture 5?
 
+4)
+What are the COMP courses the university offers.
+What are the SOEN courses the university offers.
+Can you list all SOEN courses does available?
+Can you list all COMP courses does available?
+
+5)
+What are the course material for K-means_clustering in COMP 6721?
+Recommended materials that covers K-means_clustering in COMP 6721
+What are the course material for Artificial_neural_network in COMP 6721?
+Recommended materials that covers Artificial_neural_network in COMP 6721
+What are the course material for DBpedia in COMP 6741?
+Recommended materials that covers DBpedia in COMP 6741
+What are the course material for ELIZA in COMP 6741?
+Recommended materials that covers ELIZA in COMP 6741
+
+6)
+How many credits is MECH 6051 worth?
+How many credits for MECH 6051?
+MECH 6051 has how many credits?
+
+7)
+For MANA 684, what additional resources are available?
+Additional links to MANA 684?
+For MBA 644, what additional resources are available?
+Additional links to MBA 644?
+For BTM 633, what additional resources are available?
+Additional links to BTM 633?
+For CHST 605, what additional resources are available?
+Additional links to CHST 605?
+For POLI 693, what additional resources are available?
+Additional links to POLI 693?
+For BLDG 390, what additional resources are available?
+Additional links to BLDG 390?
+For COMP 6741, what additional resources are available?
+Additional links to COMP 6741?
+For COMP 6721, what additional resources are available?
+Additional links to COMP 6721?
+
+8)
+What content does COMP 6741 in Lecture 3 consist of?
+What's the content of COMP 6741 in Lecture 6?
+What is the content of COMP 6721 for Lecture 11?
+
+9)
+What reading materials does COMP 6721 have covering K-means_clustering?
+What are the reading materials of K-means_clustering in COMP 6741 ?
+
+10)
+What is the competence of AyakaKamisotu from COMP 6721?
+What topics does AyakaKamisotu have competence in for COMP 6721?
+What is the competence of RaidenShogun from COMP 6721?
+What topics does RaidenShogun have competence in for COMP 6741?
+What is the competence of SaraKujou from COMP 6741?
+What topics does SaraKujou have competence in for COMP 6721?
+
+11)
+What is AyakaKamisotu grade in COMP 6721?
+What grade did RaidenShogun achieve in COMP 6741?
+What grade did SaraKujou achieve in COMP 6741?
+
+12)
+Which students have completed COMP 6721?
+Which students have completed COMP 6741?
+
+13)
+Transcript for AyakaKamisotu
+Provide the transcript for RaidenShogun
+Student transcript for SaraKujou
 
 
 14)
+What is course COMP 6741 about?
+What is COMP 6721 about?
 What is FBRS 481 about?
 What is FINA 405 about?
 What is GEOG 210 about?
 
+15)
+List the topics and resources covered in Lab 02 of COMP 6721?
+List the topics and resources covered in Slide 05 of COMP 6721?
+List the topics and resources covered in Worksheet 07 of COMP 6721?
 
+16)
+Which course events cover FOAF_ontology?
+Which course events cover Alphabeta_pruning?
+Which course events cover Part-of-speech_tagging?

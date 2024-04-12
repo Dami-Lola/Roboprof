@@ -19,9 +19,9 @@ ex:AyakaKamisotu a focu:Student ;
     [
         focu:courseCode focudata:COMP6741 ;
         focu:gradeAchieved "B+" ;
-        focu:competencyInTopic focudata:Confusion_matrix,
-                               focudata:Cross-validation_statistics,
-                               focudata:Decision_tree_learning
+        focu:competencyInTopic focudata:Named-entity_recognition,
+                               focudata:Open_data,
+                               focudata:Public_Knowledge
     ],
     [
         focu:courseCode focudata:COMS205 ;
@@ -55,7 +55,7 @@ ex:RaidenShogun a focu:Student ;
     [
         focu:courseCode focudata:COMP6741 ;
         focu:gradeAchieved "B+" ;
-        focu:competencyInTopic focudata:ELIZA,
+        focu:competencyInTopic focudata:Intelligent_agent,
                                focudata:Euclidean_distance,
                                focudata:FOAF_ontology
     ],
@@ -91,7 +91,7 @@ ex:SaraKujou a focu:Student ;
     [
         focu:courseCode focudata:COMP6741 ;
         focu:gradeAchieved "A+" ;
-        focu:competencyInTopic focudata:Intelligent_agent,
+        focu:competencyInTopic focudata:Binary_logarithm,
                                focudata:Natural_language_processing,
                                focudata:Open_data
     ],

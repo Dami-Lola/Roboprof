@@ -50,13 +50,21 @@ nlu:
 - intent: about_specific_uni_courses
   examples: |
     - What are the [COMP](subject) courses the university offers.
+    - What are the [SOEN](subject) courses the university offers.
     - Can you list all [SOEN](subject) courses does available?
+    - Can you list all [COMP](subject) courses does available?
 
 #5. What [materials] (slides, readings) are recommended for [topic] in [course] [number]?
 - intent: about_recommended_materials
   examples: |
     - What are the course material for [K-means_clustering](topic) in [COMP 6721](course)?
     - Recommended materials that covers [K-means_clustering](topic) in [COMP 6721](course)
+    - What are the course material for [Artificial_neural_network](topic) in [COMP 6721](course)?
+    - Recommended materials that covers [Artificial_neural_network](topic) in [COMP 6721](course)
+    - What are the course material for [DBpedia](topic) in [COMP 6741](course)?
+    - Recommended materials that covers [DBpedia](topic) in [COMP 6741](course)
+    - What are the course material for [ELIZA](topic) in [COMP 6741](course)?
+    - Recommended materials that covers [ELIZA](topic) in [COMP 6741](course)
 
 #6. How many credits is [course] [number] worth?
 - intent: about_course_credits
@@ -71,7 +79,20 @@ nlu:
   examples: |
     - For [MANA 684](course), what additional resources are available?
     - Additional links to [MANA 684](course)?    
-    
+    - For [MBA 644](course), what additional resources are available?
+    - Additional links to [MBA 644](course)?
+    - For [BTM 633](course), what additional resources are available?
+    - Additional links to [BTM 633](course)?
+    - For [CHS T605](course), what additional resources are available?
+    - Additional links to [CHST 605](course)?
+    - For [POLI 693](course), what additional resources are available?
+    - Additional links to [POLI 693](course)?
+    - For [BLDG 390](course), what additional resources are available?
+    - Additional links to [BLDG 390](course)?
+    - For [COMP 6741](course), what additional resources are available?
+    - Additional links to [COMP 6741](course)?
+    - For [COMP 6721](course), what additional resources are available?
+    - Additional links to [COMP 6721](course)?
 
 #8. Detail the content (slides, worksheets, readings) available for [lecture number] in [course] [number].
 - intent: about_content_course_lecture
@@ -85,8 +106,9 @@ nlu:
 - intent: about_course_reading_materials
   examples: |
     - What reading materials does [COMP 6721](course) have covering [K-means_clustering](topic)?
-    - What are the reading materials of [K-means_clustering](topic) in [COMP 6741](course) ?
-
+    - What are the reading materials of [Alphabeta_pruning](topic) in [COMP 6721](course) ?
+    - What reading materials does [COMP 6741](course) have covering [SPARQL](topic)?
+    - What are the reading materials of [Open_data](topic) in [COMP 6741](course) ?
 
 #10. What competencies [topics] does a student gain after completing [course] [number]?
 - intent: about_student_competencies
@@ -101,9 +123,10 @@ nlu:
 #11. What grades did [student] achieve in [course] [number]?
 - intent: about_student_grades
   examples: |
-    - What is [student](student) grade in [COMP 6721](course)?
-    - What grade did [student](student) achieve in [COMP 6741](course)?
- 
+    - What is [SaraKujou](student) grade in [COMP 6721](course)?
+    - What grade did [AyakaKamisotu](student) achieve in [COMP 6741](course)?
+    - What is [RaidenShogun](student) grade in [COMP 6721](course)?
+    - What grade did [SaraKujou](student) achieve in [COMP 6741](course)? 
 
 #12. Which [students] have completed [course] [number]?
 - intent: about_student_completed_course
@@ -129,13 +152,16 @@ nlu:
 #15
 - intent: about_course_event
   examples: |
-    - List the topics and resources covered in [Lab 2](courseEvent) of [COMP 6721]?
+    - List the topics and resources covered in [Lab 02](courseEvent) of [COMP 6721]?
+    - List the topics and resources covered in [Slide 05](courseEvent) of [COMP 6721]?
+    - List the topics and resources covered in [Worksheet 07](courseEvent) of [COMP 6721]?
 
 #16
 - intent: about_course_topicevent
   examples: |
     - Which course events cover [FOAF_ontology](topic)?
-
+    - Which course events cover [Alphabeta_pruning](topic)?
+    - Which course events cover [Part-of-speech_tagging](topic)?
 
 - intent: greet
   examples: |

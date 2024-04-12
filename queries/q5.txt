@@ -24,5 +24,6 @@ WHERE {
   focu:courseName ?courseName ;
   focu:coversTopic ?topic .
 
+  FILTER (?topicLable = "Bayes_theorem")
   FILTER (?courseNumber = "6721" && ?courseSubject = "COMP")
 }
