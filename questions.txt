@@ -15,8 +15,8 @@ Which topics are covered in the course COMP 6721 in the lecture 9?
 What topics are covered in COMP 6721 in lecture 5?
 
 4)
-What are the COMP courses the university offers.
 What are the SOEN courses the university offers.
+What are the COMP courses the university offers.
 Can you list all SOEN courses does available?
 Can you list all COMP courses does available?
 
@@ -31,7 +31,7 @@ What are the course material for ELIZA in COMP 6741?
 Recommended materials that covers ELIZA in COMP 6741
 
 6)
-How many credits is MECH 6051 worth?
+How many credits is COMP 6741 worth?
 How many credits for MECH 6051?
 MECH 6051 has how many credits?
 

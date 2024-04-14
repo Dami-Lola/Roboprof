@@ -13,6 +13,9 @@ This project marks the genesis of a transformative journey, comprised of two int
 
 * studentN3TripleGen.py: generates the student.ttl file into N-Triples
 
+* contentGen.py: generates the topics automatically, linking & filtering entities from the documents
+
+
 ## Files
 * student.ttl:  manually created student triples for the knowledgebase
 
@@ -26,6 +29,7 @@ This project marks the genesis of a transformative journey, comprised of two int
 
 * GraphDataN3.ttl: Knowledge base in N-Triples format
 
+* questions.txt: sample questions to ask the chatbot for each query
 
 
 ## Folders
@@ -68,8 +72,8 @@ To test the queries, follow the steps below to setup Triplestore and SPARQL Endp
 6) Upload the GraphData.ttl file(including the student.ttl) to the server.
 7) Copy and paste each query to run
 
-## RASE ChatBot
-.....
+## RASA ChatBot
+
 
 ## Authors (Contributors)
 * **Oluwadamilola Okafor - Evaluation Specialist**

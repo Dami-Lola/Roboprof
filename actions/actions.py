@@ -805,7 +805,7 @@ class ActionStudentCompetencies(Action):
         return []
 
 
-# Q11) For [course] [number], what additional resources (links to web pages) are available?
+# Q11) What grades did [student] achieve in [course] [number]?
 class ActionStudentGrades(Action):
     def name(self) -> Text:
         return "action_student_grades"
@@ -882,7 +882,7 @@ class ActionStudentGrades(Action):
         return []
 
 
-# Q12) For [course] [number], what additional resources (links to web pages) are available?
+# Q12) Which [students] have completed [course] [number]?
 class ActionStudentCompletedCourse(Action):
     def name(self) -> Text:
         return "action_student_completed_course"
@@ -953,7 +953,7 @@ class ActionStudentCompletedCourse(Action):
         return []
 
 
-# Q13) For [course] [number], what additional resources (links to web pages) are available?
+# Q13) Print a transcript for a [student], listing all the course taken with their grades.
 class ActionStudentTranscript(Action):
     def name(self) -> Text:
         return "action_student_transcript"
@@ -1267,11 +1267,17 @@ class ActionCourseTopicevent(Action):
                                 if innerKey == "value":
                                     worksheet = result[key][innerKey]
 
+
+                    labString = lab.split('/')  if len(lab) > 0 else ''
+                    slideString = slide.split('/') if len(slide) > 0 else ''
+                    worksheetString = worksheet.split('/') if len(worksheet) > 0 else ''
+
+                    # dispatcher.utter_message(text=f"{slideString[len(slideString) - 1]}")
                     dispatcher.utter_message(text=f"CourseName: {courseName}\n"
                                                   f"CourseCode: {courseSubject}{courseNumber}\n"
-                                                  f"Lab: {lab}\n"
-                                                  f"Lecture Slide: {slide}\n"
-                                                  f"Worksheet: {worksheet}\n")
+                                                  f"{labString[len(labString) - 1] if + len(labString) > 0 else ''}\n"
+                                                  f"{slideString[len(slideString) - 1] if len(slideString) > 0  else ''}\n"
+                                                  f"{worksheetString[len(worksheetString) - 1] if len(worksheetString) > 0  else ''}\n")
 
             else:
                 dispatcher.utter_message(text=f"Sorry, I couldn't find course information in Concordia University")
